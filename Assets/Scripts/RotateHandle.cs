@@ -43,12 +43,15 @@ using UnityEngine;
                         if (rotateObject == null && col.GetComponent<RotateObject>() && col.GetComponent<RotateObject>().parent == null)
                         {
                             rotateObject = col.gameObject;
-                            rotateObject.transform.rotation = transform.rotation;
-                            rotateObject.transform.localPosition = Vector3.zero;
-                            rotateObject.transform.localRotation = Quaternion.identity;
+                            
+                            rotateObject.transform.eulerAngles = new Vector3(0, 10f, 0);
+                           
+                               
+                            //rotateObject.transform.localPosition = Vector3.zero;
+                            //rotateObject.transform.localRotation = Quaternion.identity;
                             rotateObject.GetComponent<Rigidbody>().isKinematic = true;
                             rotateObject.GetComponent<RotateObject>().parent = controller;
-                            rotateObject.GetComponent<AudioSource>().mute = false;
+                            //rotateObject.GetComponent<AudioSource>().mute = false;
                         }
                     }
                 }
