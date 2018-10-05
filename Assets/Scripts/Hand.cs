@@ -7,6 +7,10 @@ public class Hand : MonoBehaviour {
 
     GameObject heldObject;
     Controller controller;
+    private SteamVR_TrackedObject trackedObj;
+
+    private bool throwing;
+    private Rigidbody rigidbodyObject;
 
 	// Use this for initialization
 	void Start () {
@@ -23,8 +27,7 @@ public class Hand : MonoBehaviour {
                 heldObject.GetComponent<Rigidbody>().isKinematic = false;
                 heldObject.GetComponent<HeldObject>().parent = null;
                 heldObject = null;
-                //GameObject.Find("pickUp").GetComponent<AudioSource>().mute = true;
-                //heldObject.GetComponent<AudioSource>().mute = true;
+                throwing = true;
             }
         }
         else
@@ -39,15 +42,47 @@ public class Hand : MonoBehaviour {
                     {
                         heldObject = col.gameObject;
                         heldObject.transform.parent = transform;
-                        heldObject.transform.localPosition = Vector3.zero;
-                        heldObject.transform.localRotation = Quaternion.identity;
+                        //heldObject.transform.localPosition = new Vector3(0.05f,0,0.05f);
+                        //heldObject.transform.localRotation = Quaternion.identity;
                         heldObject.GetComponent<Rigidbody>().isKinematic = true;
                         heldObject.GetComponent<HeldObject>().parent = controller;
-                        //GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>().mute = false;
                         heldObject.GetComponent<AudioSource>().mute = false;
+                        throwing = false;
                     }
                 }
             }
         }
 	}
+    void FixedUpdate()
+    {
+        if (throwing)
+        {
+            Transform origin;
+            Rigidbody rigidbody = heldObject.GetComponent<Rigidbody>();
+            if (trackedObj.origin != null)
+            {
+                origin = trackedObj.origin;
+            }
+            else
+            {
+                origin = trackedObj.transform.parent;
+            }
+
+            if (origin != null)
+            {
+                rigidbody.velocity = origin.TransformVector(controller.controller.velocity);
+                rigidbody.angularVelocity = origin.TransformVector(controller.controller.angularVelocity * 0.25f);
+            }
+            else
+            {
+                rigidbody.velocity = controller.controller.velocity;
+                rigidbody.angularVelocity = controller.controller.angularVelocity * 0.25f;
+
+            }
+
+            rigidbody.maxAngularVelocity = rigidbody.angularVelocity.magnitude;
+
+            throwing = false;
+        }
+    }
 }

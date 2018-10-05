@@ -25,7 +25,7 @@ using UnityEngine;
                 if (controller.controller.GetPressUp(Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger))
                 {
                     rotateObject.transform.parent = null;
-                    rotateObject.GetComponent<Rigidbody>().isKinematic = false;
+                    //rotateObject.GetComponent<Rigidbody>().isKinematic = false;
                     rotateObject.GetComponent<RotateObject>().parent = null;
                     rotateObject = null;
                     //GameObject.Find("pickUp").GetComponent<AudioSource>().mute = true;
@@ -44,12 +44,12 @@ using UnityEngine;
                         {
                             rotateObject = col.gameObject;
                             
-                            rotateObject.transform.eulerAngles = new Vector3(0, 10f, 0);
+                            rotateObject.transform.eulerAngles = new Vector3(0, 15f, 0);
                            
                                
                             //rotateObject.transform.localPosition = Vector3.zero;
                             //rotateObject.transform.localRotation = Quaternion.identity;
-                            rotateObject.GetComponent<Rigidbody>().isKinematic = true;
+                            //rotateObject.GetComponent<Rigidbody>().isKinematic = true;
                             rotateObject.GetComponent<RotateObject>().parent = controller;
                             //rotateObject.GetComponent<AudioSource>().mute = false;
                         }
