@@ -22,17 +22,19 @@ namespace VRStandardAssets.Examples
         float negativeNormalizedTime = .9f;
         Coroutine co;
         Renderer rend;
+        Renderer[] materials;
         private void Awake()
         {
             //.Play();
             rend = GetComponent<Renderer>();
             rend.material.shader = Shader.Find("Custom/Dissolve");
+            materials = GetComponentsInChildren<Renderer>();    
 
             //m_Renderer.material = m_NormalMaterial;
         }   
         private IEnumerator Countdown()
         {
-            float timer = 10f; // 3 seconds you can change this 
+            float timer = 10f;   // 3 seconds you can change this 
                                  //to whatever you want
             normalizedTime = 0;
             while (normalizedTime <= 1f)
@@ -40,11 +42,15 @@ namespace VRStandardAssets.Examples
 
                 normalizedTime += Time.deltaTime / timer;
                 negativeNormalizedTime -= (Time.deltaTime / timer) + 0.001f;
-                rend.material.SetFloat("_SliceAmount", negativeNormalizedTime);
+                //rend.material.SetFloat("_SliceAmount", negativeNormalizedTime);
+                foreach (Renderer mat in materials)
+                {
+                    mat.material.SetFloat("_SliceAmount", negativeNormalizedTime);
+                }
 
                 if (normalizedTime >= 0.4f)
                 {
-                    audioSource.mute = true;
+                 //   audioSource.mute = true;
                 }
 
                 yield return null;
