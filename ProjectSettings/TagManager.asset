@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Music
   - PickUp
+  - RecordPos
+  - Record
+  - MusicPin
   layers:
   - Default
   - TransparentFX

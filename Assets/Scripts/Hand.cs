@@ -11,6 +11,7 @@ public class Hand : MonoBehaviour {
 
     private bool throwing;
     private Rigidbody rigidbodyObject;
+    
 
 	// Use this for initialization
 	void Start () {
@@ -21,6 +22,7 @@ public class Hand : MonoBehaviour {
 	void Update () {
         if (heldObject)
         {
+            
             if (controller.controller.GetPressUp(Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger))
             {
                 heldObject.transform.parent = null;
@@ -46,7 +48,8 @@ public class Hand : MonoBehaviour {
                         //heldObject.transform.localRotation = Quaternion.identity;
                         heldObject.GetComponent<Rigidbody>().isKinematic = true;
                         heldObject.GetComponent<HeldObject>().parent = controller;
-                        heldObject.GetComponent<AudioSource>().mute = false;
+                        if (!heldObject.CompareTag("Record"))
+                            heldObject.GetComponent<AudioSource>().mute = false;
                         throwing = false;
                     }
                 }

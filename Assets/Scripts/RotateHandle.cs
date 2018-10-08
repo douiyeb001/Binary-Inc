@@ -45,12 +45,12 @@ using UnityEngine;
                             rotateObject = col.gameObject;
                             
                             rotateObject.transform.eulerAngles = new Vector3(0, 15f, 0);
-                           
-                               
-                            //rotateObject.transform.localPosition = Vector3.zero;
-                            //rotateObject.transform.localRotation = Quaternion.identity;
-                            //rotateObject.GetComponent<Rigidbody>().isKinematic = true;
-                            rotateObject.GetComponent<RotateObject>().parent = controller;
+                            
+
+                        //rotateObject.transform.localPosition = Vector3.zero;
+                        //rotateObject.transform.localRotation = Quaternion.identity;
+                        //rotateObject.GetComponent<Rigidbody>().isKinematic = true;
+                        rotateObject.GetComponent<RotateObject>().parent = controller;
                             //rotateObject.GetComponent<AudioSource>().mute = false;
                         }
                     }
