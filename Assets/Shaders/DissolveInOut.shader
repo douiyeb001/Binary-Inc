@@ -10,7 +10,7 @@
 		_BurnColor("Burn Color", Color) = (1,1,1,1)
 
 		_EmissionAmount("Emission amount", float) = 2.0
-			_MainTex("Texture", 2D) = "white" {}
+			//_MainTex("Texture", 2D) = "white" {}
 		_BumpMap("Bumpmap", 2D) = "bump" {}
 
 	}

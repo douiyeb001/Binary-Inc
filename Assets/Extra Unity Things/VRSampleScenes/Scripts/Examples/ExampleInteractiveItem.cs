@@ -17,12 +17,14 @@ namespace VRStandardAssets.Examples
         [SerializeField] private Renderer m_Renderer;
 
         public float timer = 0;
+        public AudioSource audioSource;
         public float normalizedTime = 0;
         float negativeNormalizedTime = .9f;
         Coroutine co;
         Renderer rend;
         private void Awake()
         {
+            //.Play();
             rend = GetComponent<Renderer>();
             rend.material.shader = Shader.Find("Custom/Dissolve");
 
@@ -38,8 +40,12 @@ namespace VRStandardAssets.Examples
 
                 normalizedTime += Time.deltaTime / timer;
                 negativeNormalizedTime -= (Time.deltaTime / timer) + 0.001f;
-
                 rend.material.SetFloat("_SliceAmount", negativeNormalizedTime);
+
+                if (normalizedTime >= 0.4f)
+                {
+                    audioSource.mute = true;
+                }
 
                 yield return null;
             }
