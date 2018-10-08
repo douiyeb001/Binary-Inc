@@ -10,6 +10,8 @@
 		_BurnColor("Burn Color", Color) = (1,1,1,1)
 
 		_EmissionAmount("Emission amount", float) = 2.0
+			_MainTex("Texture", 2D) = "white" {}
+		_BumpMap("Bumpmap", 2D) = "bump" {}
 
 	}
 		SubShader{
@@ -33,15 +35,17 @@
 			bool _isTriggered;
 
 			struct Input {
+				float2 uv_BumpMap;
 				float2 uv_MainTex;
 			};
 
-
+			
 			void surf(Input IN, inout SurfaceOutput o) {
 				fixed4 c = tex2D(_MainTex, IN.uv_MainTex) * _Color;
 				half test = tex2D(_SliceGuide, IN.uv_MainTex).rgb - _SliceAmount;
 				clip(test);
-
+				o.Albedo = tex2D(_MainTex, IN.uv_MainTex).rgb;
+				o.Normal = UnpackNormal(tex2D(_BumpMap, IN.uv_BumpMap));
 				if (test < _BurnSize && _SliceAmount > 0) {
 					o.Emission = tex2D(_BurnRamp, float2(test * (1 / _BurnSize), 0)) * _BurnColor * _EmissionAmount;
 				}
