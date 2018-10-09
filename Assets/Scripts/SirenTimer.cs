@@ -24,7 +24,7 @@ public class SirenTimer : MonoBehaviour {
             Blue.enabled = false;
             yield return new WaitForSeconds(2);
             Red.enabled = false;
-            Blue.enabled = true;
+            Blue.enabled = true;    
             yield return new WaitForSeconds(2);
         }
         

@@ -3,7 +3,7 @@
 		_Color("Color", Color) = (1,1,1,1)
 		_MainTex("Albedo (RGB)", 2D) = "white" {}
 		_SliceGuide("Slice Guide (RGB)", 2D) = "white" {}
-		_SliceAmount("Slice Amount", Range(0.0, 1.0)) = 0
+		_SliceAmount("Slice Amount", Range(0.0, 1.0)) = 1
 
 		_BurnSize("Burn Size", Range(0.0, 1.0)) = 0.15
 		_BurnRamp("Burn Ramp (RGB)", 2D) = "white" {}
