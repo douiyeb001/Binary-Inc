@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1273174, g: 0.13414761, b: 0.12107885, a: 1}
+  m_IndirectSpecularColor: {r: 0.0046339715, g: 0.00429614, b: 0.002340672, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4997,7 +4997,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 483221746}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: -0.168, z: 0}
+  m_LocalPosition: {x: 0.033, y: -0.1827, z: -0.015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 625413047}
@@ -7223,11 +7223,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 692086270}
-  - component: {fileID: 692086275}
   - component: {fileID: 692086274}
   - component: {fileID: 692086273}
   - component: {fileID: 692086272}
   - component: {fileID: 692086271}
+  - component: {fileID: 692086275}
   m_Layer: 0
   m_Name: Favela Store
   m_TagString: GazeTarget
@@ -7306,7 +7306,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -7413,8 +7413,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!64 &692086275
-MeshCollider:
+--- !u!65 &692086275
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -7422,11 +7422,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.23559417, y: 0.8826666, z: 0.34558275}
+  m_Center: {x: -0.0014589786, y: -0.05866623, z: -0.0022808455}
 --- !u!1 &708165913
 GameObject:
   m_ObjectHideFlags: 0
@@ -12072,7 +12070,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1231216960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14998,8 +14996,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.14895256, y: 0.11862041, z: 0.381838}
-  m_Center: {x: -0.0010224134, y: 0.004312801, z: -0.058405153}
+  m_Size: {x: 0.14895256, y: 0.11862041, z: 2.1748152}
+  m_Center: {x: -0.0010221531, y: 0.004312801, z: 0.83808523}
 --- !u!23 &1475266377
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15052,7 +15050,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1475266373}
   m_LocalRotation: {x: -0, y: 0.94537085, z: -0, w: 0.32599697}
-  m_LocalPosition: {x: -0.58, y: 3, z: 26.23}
+  m_LocalPosition: {x: -0.58, y: 3, z: 23.2}
   m_LocalScale: {x: 70.00003, y: 70, z: 10}
   m_Children:
   - {fileID: 1791164189}
@@ -15068,7 +15066,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 03e956a19a3f682479ad13667716d484, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d5733d11d1fa43545ae8ff450593b983, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.085
   m_Pitch: 1
@@ -15114,7 +15112,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.5
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -15606,7 +15604,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -19719,7 +19717,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1996005065
 Transform:
   m_ObjectHideFlags: 0

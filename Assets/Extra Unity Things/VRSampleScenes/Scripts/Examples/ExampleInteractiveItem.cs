@@ -43,7 +43,7 @@ namespace VRStandardAssets.Examples
             {
 
                 normalizedTime += Time.deltaTime / timer;
-                negativeNormalizedTime -= (Time.deltaTime / timer) + 0.001f;
+                negativeNormalizedTime -= (Time.deltaTime / timer) + 0.005f;
                 //rend.material.SetFloat("_SliceAmount", negativeNormalizedTime);
                 foreach (Renderer mat in materials)
                 {
