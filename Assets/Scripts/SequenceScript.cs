@@ -8,7 +8,7 @@ public class SequenceScript : MonoBehaviour {
     
 	// Use this for initialization
 	void Start () {
-         TheBuildings = GameObject.FindGameObjectsWithTag("GazeTarget");
+       //  TheBuildings = GameObject.FindGameObjectsWithTag("GazeTarget");
         arrayCount = 0;
         foreach (GameObject BD in TheBuildings)
         {

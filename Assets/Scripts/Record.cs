@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class Record : MonoBehaviour {
 
-    public GameObject obj;
-    public GameObject turnPin;
+    public GameObject trigger1;
+    public GameObject trigger2;
+    public GameObject turnPin1;
+    public GameObject turnPin2;
     public int test = 0;
-    public float rot = 0;
-    public bool ready = false;
+    public float rot1 = 0;
+    public float rot2 = 0;
+    public bool ready1 = false;
+    public bool ready2 = false;
 
     // Use this for initialization
     void Start () {
@@ -17,8 +21,13 @@ public class Record : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        rot = turnPin.transform.rotation.eulerAngles.y;
-        if (rot < 20 && ready)
+        rot1 = turnPin1.transform.rotation.eulerAngles.y;
+        rot2 = turnPin2.transform.rotation.eulerAngles.y;
+        if (rot1 < 20 && ready1)
+        {
+            GetComponent<AudioSource>().mute = false;
+        }
+        if (rot2 < 20 && ready2)
         {
             GetComponent<AudioSource>().mute = false;
         }
@@ -29,17 +38,18 @@ public class Record : MonoBehaviour {
     {
         //if (col.CompareTag("RecordPos"))
         //{
-        if(col.gameObject == obj)
+        if(col.gameObject == trigger1)
         {
-
-            //GetComponent<AudioSource>().mute = false;
-            test += 1;
-            ready = true;
+            ready1 = true;
         }
-            
-            //Destroy(col.gameObject);
-            
-            //obj = col.gameObject;
+        if (col.gameObject == trigger2)
+        {
+            ready2 = true;
+        }
+
+        //Destroy(col.gameObject);
+
+        //obj = col.gameObject;
         //}
     }
 }
