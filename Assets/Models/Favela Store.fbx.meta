@@ -1,0 +1,327 @@
+fileFormatVersion: 2
+guid: c2c221878aa115749849b4076c42608d
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: balcony
+    100002: //RootNode
+    100004: House1
+    100006: Latch_ancre3
+    100008: Latch_bolt
+    100010: Latch_bolt10
+    100012: Latch_bolt4
+    100014: pCube14
+    100016: polySurface10
+    100018: polySurface10 1
+    100020: polySurface10 2
+    100022: polySurface10 3
+    100024: polySurface11
+    100026: polySurface11 1
+    100028: polySurface11 2
+    100030: polySurface11 3
+    100032: polySurface12
+    100034: polySurface12 1
+    100036: polySurface12 2
+    100038: polySurface12 3
+    100040: polySurface13
+    100042: polySurface13 1
+    100044: polySurface14
+    100046: polySurface14 1
+    100048: polySurface15
+    100050: polySurface15 1
+    100052: polySurface16
+    100054: polySurface16 1
+    100056: pPipe1
+    100058: pPipe10
+    100060: pPipe11
+    100062: pPipe2
+    100064: pPipe3
+    100066: pPipe4
+    100068: pPipe5
+    100070: pPipe6
+    100072: pPipe7
+    100074: pPipe8
+    100076: pPipe9
+    100078: pPlane1
+    100080: Rain_cover
+    100082: Rain_cover_roof
+    100084: Sign
+    100086: Sign1
+    100088: Sign2
+    100090: Top_windows_2
+    100092: Top_windows_3
+    100094: transform10
+    100096: transform10 1
+    100098: transform11
+    100100: transform11 1
+    100102: transform42
+    100104: transform43
+    100106: transform44
+    100108: transform45
+    100110: transform46
+    100112: transform47
+    100114: transform48
+    100116: transform49
+    100118: transform50
+    100120: transform51
+    100122: transform52
+    100124: transform53
+    100126: transform54
+    100128: transform55
+    100130: transform8
+    100132: transform8 1
+    100134: transform8 2
+    100136: transform9
+    100138: transform9 1
+    100140: WIndow_1
+    100142: WIndow_2
+    100144: WIndow_3
+    100146: WIndow_4
+    100148: Window_frame
+    400000: balcony
+    400002: //RootNode
+    400004: House1
+    400006: Latch_ancre3
+    400008: Latch_bolt
+    400010: Latch_bolt10
+    400012: Latch_bolt4
+    400014: pCube14
+    400016: polySurface10
+    400018: polySurface10 1
+    400020: polySurface10 2
+    400022: polySurface10 3
+    400024: polySurface11
+    400026: polySurface11 1
+    400028: polySurface11 2
+    400030: polySurface11 3
+    400032: polySurface12
+    400034: polySurface12 1
+    400036: polySurface12 2
+    400038: polySurface12 3
+    400040: polySurface13
+    400042: polySurface13 1
+    400044: polySurface14
+    400046: polySurface14 1
+    400048: polySurface15
+    400050: polySurface15 1
+    400052: polySurface16
+    400054: polySurface16 1
+    400056: pPipe1
+    400058: pPipe10
+    400060: pPipe11
+    400062: pPipe2
+    400064: pPipe3
+    400066: pPipe4
+    400068: pPipe5
+    400070: pPipe6
+    400072: pPipe7
+    400074: pPipe8
+    400076: pPipe9
+    400078: pPlane1
+    400080: Rain_cover
+    400082: Rain_cover_roof
+    400084: Sign
+    400086: Sign1
+    400088: Sign2
+    400090: Top_windows_2
+    400092: Top_windows_3
+    400094: transform10
+    400096: transform10 1
+    400098: transform11
+    400100: transform11 1
+    400102: transform42
+    400104: transform43
+    400106: transform44
+    400108: transform45
+    400110: transform46
+    400112: transform47
+    400114: transform48
+    400116: transform49
+    400118: transform50
+    400120: transform51
+    400122: transform52
+    400124: transform53
+    400126: transform54
+    400128: transform55
+    400130: transform8
+    400132: transform8 1
+    400134: transform8 2
+    400136: transform9
+    400138: transform9 1
+    400140: WIndow_1
+    400142: WIndow_2
+    400144: WIndow_3
+    400146: WIndow_4
+    400148: Window_frame
+    2100000: blinn1
+    2100002: lambert4
+    2100004: phong1
+    2100006: anisotropic1
+    2100008: lambert5
+    2100010: anisotropic2
+    2100012: lambert3
+    2300000: balcony
+    2300002: House1
+    2300004: Latch_ancre3
+    2300006: Latch_bolt
+    2300008: Latch_bolt10
+    2300010: Latch_bolt4
+    2300012: pCube14
+    2300014: polySurface10
+    2300016: polySurface10 1
+    2300018: polySurface10 2
+    2300020: polySurface10 3
+    2300022: polySurface11
+    2300024: polySurface11 1
+    2300026: polySurface11 2
+    2300028: polySurface11 3
+    2300030: polySurface12
+    2300032: polySurface12 1
+    2300034: polySurface12 2
+    2300036: polySurface12 3
+    2300038: polySurface15
+    2300040: polySurface15 1
+    2300042: polySurface16
+    2300044: polySurface16 1
+    2300046: Rain_cover
+    2300048: Rain_cover_roof
+    2300050: Sign
+    2300052: Window_frame
+    3300000: balcony
+    3300002: House1
+    3300004: Latch_ancre3
+    3300006: Latch_bolt
+    3300008: Latch_bolt10
+    3300010: Latch_bolt4
+    3300012: pCube14
+    3300014: polySurface10
+    3300016: polySurface10 1
+    3300018: polySurface10 2
+    3300020: polySurface10 3
+    3300022: polySurface11
+    3300024: polySurface11 1
+    3300026: polySurface11 2
+    3300028: polySurface11 3
+    3300030: polySurface12
+    3300032: polySurface12 1
+    3300034: polySurface12 2
+    3300036: polySurface12 3
+    3300038: polySurface15
+    3300040: polySurface15 1
+    3300042: polySurface16
+    3300044: polySurface16 1
+    3300046: Rain_cover
+    3300048: Rain_cover_roof
+    3300050: Sign
+    3300052: Window_frame
+    4300000: Sign
+    4300002: Window_frame
+    4300004: polySurface15
+    4300006: polySurface16
+    4300008: polySurface15
+    4300010: polySurface16
+    4300012: polySurface10
+    4300014: polySurface11
+    4300016: polySurface12
+    4300018: polySurface10
+    4300020: polySurface11
+    4300022: polySurface12
+    4300024: polySurface10
+    4300026: polySurface11
+    4300028: polySurface12
+    4300030: polySurface10
+    4300032: polySurface11
+    4300034: polySurface12
+    4300036: pCube14
+    4300038: Latch_bolt10
+    4300040: Latch_ancre3
+    4300042: Latch_bolt4
+    4300044: Latch_bolt
+    4300046: Rain_cover_roof
+    4300048: Rain_cover
+    4300050: House1
+    4300052: balcony
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

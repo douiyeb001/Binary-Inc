@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: e488397bd9549564b8cf0d7bf89f2b5b
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _MainTex: {instanceID: 0}
+  - _SliceGuide: {fileID: 2800000, guid: 71a57b26185fea843b04097953d9bc84, type: 3}
+  - _BurnRamp: {instanceID: 0}
+  - _BumpMap: {instanceID: 0}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -16,30 +16,45 @@ namespace VRStandardAssets.Examples
         [SerializeField] private VRInteractiveItem m_InteractiveItem;
         [SerializeField] private Renderer m_Renderer;
 
-        public float timer = 0;
+        public float sliceAmount = 0;
+        public AudioSource audioSource;
         public float normalizedTime = 0;
+        private bool mute;
         float negativeNormalizedTime = .9f;
         Coroutine co;
         Renderer rend;
+        Renderer[] materials;
         private void Awake()
         {
+            //.Play();
+            audioSource = GetComponent<AudioSource>();
             rend = GetComponent<Renderer>();
             rend.material.shader = Shader.Find("Custom/Dissolve");
+            materials = GetComponentsInChildren<Renderer>();    
 
             //m_Renderer.material = m_NormalMaterial;
         }   
         private IEnumerator Countdown()
         {
-            float timer = 10f; // 3 seconds you can change this 
+            float timer = 10f;   // 3 seconds you can change this 
                                  //to whatever you want
             normalizedTime = 0;
             while (normalizedTime <= 1f)
             {
 
                 normalizedTime += Time.deltaTime / timer;
-                negativeNormalizedTime -= (Time.deltaTime / timer) + 0.001f;
+                negativeNormalizedTime -= (Time.deltaTime / timer) + 0.005f;
+                //rend.material.SetFloat("_SliceAmount", negativeNormalizedTime);
+                foreach (Renderer mat in materials)
+                {
+                    mat.material.SetFloat("_SliceAmount", negativeNormalizedTime);
+                    sliceAmount= mat.material.GetFloat("_SliceAmount");
+                }
 
-                rend.material.SetFloat("_SliceAmount", negativeNormalizedTime);
+                if (sliceAmount <= 0)
+                {
+                  audioSource.mute = true;
+                }
 
                 yield return null;
             }
@@ -76,7 +91,7 @@ namespace VRStandardAssets.Examples
         {
             StartCoroutine(Countdown());
             Debug.Log("Show over state");
-            Debug.Log(timer);
+            
 
             // m_Renderer.material = m_OverMaterial;
             Debug.Log("hit");
