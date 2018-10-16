@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0046339715, g: 0.00429614, b: 0.002340672, a: 1}
+  m_IndirectSpecularColor: {r: 0.0046339566, g: 0.00429614, b: 0.0023406819, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2889,75 +2889,44 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4415596071963124, guid: 7fbf9e3c65402ae4cb9342f6428f697c, type: 2}
+    - target: {fileID: 4014814553305398, guid: 4cf3142e20f36dd449e988114ff01863, type: 2}
       propertyPath: m_LocalPosition.x
       value: 8.849924
       objectReference: {fileID: 0}
-    - target: {fileID: 4415596071963124, guid: 7fbf9e3c65402ae4cb9342f6428f697c, type: 2}
+    - target: {fileID: 4014814553305398, guid: 4cf3142e20f36dd449e988114ff01863, type: 2}
       propertyPath: m_LocalPosition.y
       value: 1.79
       objectReference: {fileID: 0}
-    - target: {fileID: 4415596071963124, guid: 7fbf9e3c65402ae4cb9342f6428f697c, type: 2}
+    - target: {fileID: 4014814553305398, guid: 4cf3142e20f36dd449e988114ff01863, type: 2}
       propertyPath: m_LocalPosition.z
       value: 6.8
       objectReference: {fileID: 0}
-    - target: {fileID: 4415596071963124, guid: 7fbf9e3c65402ae4cb9342f6428f697c, type: 2}
+    - target: {fileID: 4014814553305398, guid: 4cf3142e20f36dd449e988114ff01863, type: 2}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4415596071963124, guid: 7fbf9e3c65402ae4cb9342f6428f697c, type: 2}
+    - target: {fileID: 4014814553305398, guid: 4cf3142e20f36dd449e988114ff01863, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0.22096743
       objectReference: {fileID: 0}
-    - target: {fileID: 4415596071963124, guid: 7fbf9e3c65402ae4cb9342f6428f697c, type: 2}
+    - target: {fileID: 4014814553305398, guid: 4cf3142e20f36dd449e988114ff01863, type: 2}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4415596071963124, guid: 7fbf9e3c65402ae4cb9342f6428f697c, type: 2}
+    - target: {fileID: 4014814553305398, guid: 4cf3142e20f36dd449e988114ff01863, type: 2}
       propertyPath: m_LocalRotation.w
       value: -0.97528124
       objectReference: {fileID: 0}
-    - target: {fileID: 4415596071963124, guid: 7fbf9e3c65402ae4cb9342f6428f697c, type: 2}
+    - target: {fileID: 4014814553305398, guid: 4cf3142e20f36dd449e988114ff01863, type: 2}
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 20675185485495234, guid: 7fbf9e3c65402ae4cb9342f6428f697c,
-        type: 2}
-      propertyPath: m_ClearFlags
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 20675185485495234, guid: 7fbf9e3c65402ae4cb9342f6428f697c,
-        type: 2}
-      propertyPath: m_AllowMSAA
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 20675185485495234, guid: 7fbf9e3c65402ae4cb9342f6428f697c,
-        type: 2}
-      propertyPath: m_HDR
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4415596071963124, guid: 7fbf9e3c65402ae4cb9342f6428f697c, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4415596071963124, guid: 7fbf9e3c65402ae4cb9342f6428f697c, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4415596071963124, guid: 7fbf9e3c65402ae4cb9342f6428f697c, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1992832720080476, guid: 7fbf9e3c65402ae4cb9342f6428f697c, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4415596071963124, guid: 7fbf9e3c65402ae4cb9342f6428f697c, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 334.468
+    - target: {fileID: 1658451759370766, guid: 4cf3142e20f36dd449e988114ff01863, type: 2}
+      propertyPath: m_Name
+      value: MainCamera
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7fbf9e3c65402ae4cb9342f6428f697c, type: 2}
+  m_SourcePrefab: {fileID: 100100000, guid: 4cf3142e20f36dd449e988114ff01863, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &278179804
 Prefab:
@@ -10303,49 +10272,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1022262971}
   m_Mesh: {fileID: 4300006, guid: 0051278ca04620347b406c9b7952de12, type: 3}
---- !u!1 &1024871591 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1992832720080476, guid: 7fbf9e3c65402ae4cb9342f6428f697c,
-    type: 2}
-  m_PrefabInternal: {fileID: 269703619}
---- !u!114 &1024871606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1024871591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e50e925fb93c78246bf995d9dc3a2330, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 3
-  adaptiveTextureSize: 256
-  remapCurve:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  exposureAdjustment: 1.5
-  middleGrey: 0.4
-  white: 2
-  adaptionSpeed: 1.5
-  tonemapper: {fileID: 4800000, guid: 003377fc2620a44939dadde6fe3f8190, type: 3}
-  validRenderTextureFormat: 1
---- !u!114 &1024871607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1024871591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1eed1d9cbe64423499f1fefc0ce50417, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Resolution: 1
-  DefaultSpotCookie: {fileID: 2800000, guid: 5157bf6d690b6df458f6c0ce0c06d329, type: 3}
 --- !u!4 &1031363256 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: d5b05a2ee06fef546b26b3a4c4556cde,
