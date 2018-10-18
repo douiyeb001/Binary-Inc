@@ -22,10 +22,10 @@ public class SirenTimer : MonoBehaviour {
         {
             Red.enabled = true;
             Blue.enabled = false;
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(.2f);
             Red.enabled = false;
             Blue.enabled = true;    
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(.2f);
         }
         
 

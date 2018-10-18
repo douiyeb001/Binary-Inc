@@ -68,8 +68,8 @@ Material:
     - _Parallax: 0.02
     - _SrcBlend: 1
     - _Thickness: 1
-    - _ThicknessBack: 0.2
-    - _ThicknessFront: 0.2
+    - _ThicknessBack: 0.9
+    - _ThicknessFront: 1.1
     - _UVSec: 0
     - _ZTest: 0
     - _ZWrite: 1

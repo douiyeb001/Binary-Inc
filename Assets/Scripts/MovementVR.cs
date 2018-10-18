@@ -8,6 +8,7 @@ public class MovementVR : MonoBehaviour {
     public Transform[] points;
     private int destPoint = 0;
     private NavMeshAgent agent;
+    private GameObject[] children;
 
 
     void Start()
@@ -31,11 +32,10 @@ public class MovementVR : MonoBehaviour {
 
         // Set the agent to go to the currently selected destination.
         agent.destination = points[destPoint].position;
-      
 
-        // Choose the next point in the array as the destination,
-        // cycling to the start if necessary.
-        destPoint = (destPoint + 1) % points.Length;
+          // Choose the next point in the array as the destination,
+          // cycling to the start if necessary.
+          destPoint = (destPoint + 1) % points.Length;
     }
 
 
@@ -53,11 +53,20 @@ public class MovementVR : MonoBehaviour {
         if (!agent.pathPending && agent.remainingDistance < 0.5f)
         {
             GotoNextPoint();
+            SetActiveAllChildren(points[destPoint], true);
 
             agent.isStopped = true;
         }
     
 
         
+    }
+    private void SetActiveAllChildren(Transform points, bool value)
+    {
+        foreach (Transform child in points)
+        {
+            child.gameObject.SetActive(value);
+            SetActiveAllChildren(child, value);
+        }
     }
 }
