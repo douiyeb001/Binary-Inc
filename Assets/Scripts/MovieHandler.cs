@@ -17,7 +17,7 @@ public class MovieHandler : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         frames = movie.frame;
-        if (movie.frame == 34)
+        if (movie.frame == (long)movie.frameCount)
             movie.Play();
 	}
 }

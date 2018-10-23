@@ -5,6 +5,7 @@ using UnityEngine;
 public class boxSpawner : MonoBehaviour {
 
     public GameObject[] box;
+        
     private Transform tf;
 	// Use this for initialization
 	void Start () {
@@ -17,7 +18,6 @@ public class boxSpawner : MonoBehaviour {
 	}
     void FixedUpdate()
     {
-        
         
         Instantiate(box[Random.Range(0,2)], tf);
     }
