@@ -10,6 +10,7 @@ TagManager:
   - Record
   - MusicPin
   - GazeTarget
+  - Wheels
   layers:
   - Default
   - TransparentFX
