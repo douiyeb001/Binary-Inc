@@ -10,6 +10,7 @@ TagManager:
   - Record
   - MusicPin
   - GazeTarget
+  - Box
   layers:
   - Default
   - TransparentFX

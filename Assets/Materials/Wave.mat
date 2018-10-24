@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Wave
-  m_Shader: {fileID: 4800000, guid: f4db45ef4c1101b408526d82e02ba6e2, type: 3}
+  m_Shader: {fileID: 4800000, guid: b493c7900a1114e438f1d62134e1195e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -66,7 +66,7 @@ Material:
     - Vector1_710448D6: 0.1
     - Vector1_756BDA2C: 0.05
     - Vector1_CA27E813: 2
-    - Vector1_D5FDAC15: 0
+    - Vector1_D5FDAC15: 2
     - Vector1_E3672FF1: 30
     - _AlphaClip: 0
     - _Blend: 0
