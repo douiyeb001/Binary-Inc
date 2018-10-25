@@ -5,11 +5,15 @@ using UnityEngine;
 public class MaterialChanger : MonoBehaviour {
     public Material[] material;
     Renderer rend;
+    public GameObject[] obj;
+    public int currentMat;
+    private int t;
 
 	void Start () {
         rend = GetComponent<Renderer>();
         rend.enabled = true;
         rend.sharedMaterial = material[0];
+        currentMat = 0;
 
     }
 
@@ -17,11 +21,18 @@ public class MaterialChanger : MonoBehaviour {
     {
         if(col.gameObject.tag == "Box")
         {
-            rend.sharedMaterial = material[Random.Range(1,material.Length)];
+            t = Random.Range(1, material.Length);
+            rend.sharedMaterial = material[t];
+            Instantiate(obj[t-1],transform);
+            currentMat = t;
+
         }
     }
     private void OnTriggerExit(Collider other)
     {
+        
         rend.sharedMaterial = material[0];
+        currentMat = 0;
+
     }
 }

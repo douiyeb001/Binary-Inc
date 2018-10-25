@@ -134,6 +134,13 @@ MonoBehaviour:
   - {fileID: 2100000, guid: bacc667b74c6bd0408f445e20ae4d69c, type: 2}
   - {fileID: 2100000, guid: fa89f2b5182d4cd4db1d1bbeff46c4bb, type: 2}
   - {fileID: 2100000, guid: 176d6893d9116f347bab68028af12353, type: 2}
+  obj:
+  - {fileID: 1930144339396616, guid: a138b56ab37ac9647873b11bc231bd6c, type: 2}
+  - {fileID: 1280462055119248, guid: 0b896cf5881f03142b6a80e6faf86e1d, type: 2}
+  - {fileID: 1083884523588448, guid: ff02db4a171ac1145928c29f1d4bc0f9, type: 2}
+  - {fileID: 1470466756580226, guid: 01362a37bfb92364891672e2fc59d151, type: 2}
+  - {fileID: 1550753913456928, guid: b47ee0f55a3d4494784b2302b477f3f4, type: 2}
+  - {fileID: 1047982780049968, guid: 3887d8c32997de94ba47f673be555445, type: 2}
 --- !u!136 &136157320754040612
 CapsuleCollider:
   m_ObjectHideFlags: 1
