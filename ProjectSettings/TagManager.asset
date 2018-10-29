@@ -4,6 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Music
+  - PickUp
+  - RecordPos
+  - Record
+  - MusicPin
+  - GazeTarget
+  - Box
   - Shootable
   - Waypoint
   layers:
