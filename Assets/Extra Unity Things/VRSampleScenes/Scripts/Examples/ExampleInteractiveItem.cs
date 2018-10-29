@@ -19,13 +19,17 @@ namespace VRStandardAssets.Examples
         public float sliceAmount = 0;
         public AudioSource audioSource;
         public float normalizedTime = 0;
-        private bool mute;
         float negativeNormalizedTime = .9f;
-        Coroutine co;
+        public float delayTimer = 0;
+
         Renderer rend;
         Renderer[] materials;
+
+        public GameObject player;
+
         private void Awake()
         {
+            player = GameObject.Find("Player");
             //.Play();
             audioSource = GetComponent<AudioSource>();
             rend = GetComponent<Renderer>();
@@ -62,7 +66,17 @@ namespace VRStandardAssets.Examples
 
 
         }
-       
+        private IEnumerator NewCountDown()
+        {
+            Debug.Log("reee");
+
+            yield return new WaitForSecondsRealtime(delayTimer);
+            Destroy(this.gameObject);
+            player.GetComponent<MovementVR>().TurnOnWalk();
+            
+            
+            yield return null;
+        }
 
 
         private void OnEnable()
@@ -89,9 +103,9 @@ namespace VRStandardAssets.Examples
         //Handle the Over event
         private void HandleOver()
         {
-            StartCoroutine(Countdown());
+           // StartCoroutine(Countdown());
             Debug.Log("Show over state");
-            
+            StartCoroutine(NewCountDown());
 
             // m_Renderer.material = m_OverMaterial;
             Debug.Log("hit");

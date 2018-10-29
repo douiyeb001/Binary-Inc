@@ -4,13 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Music
-  - PickUp
-  - RecordPos
-  - Record
-  - MusicPin
-  - GazeTarget
-  - Wheels
+  - Shootable
+  - Waypoint
   layers:
   - Default
   - TransparentFX
@@ -20,13 +15,13 @@ TagManager:
   - UI
   - 
   - 
-  - Ethan
-  - MazeWalls
-  - MazeTurret
-  - MazeTurretBullet
-  - Bg
-  - FPSWeapon
-  - WireFrame
+  - Lighting
+  - Ground
+  - Postprocessing
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -45,9 +40,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Fire
+    uniqueID: 3804908061
+    locked: 0
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: GUI
-    uniqueID: 2379361113
     locked: 0
