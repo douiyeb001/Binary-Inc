@@ -10,7 +10,7 @@ public class Balloon : MonoBehaviour {
     // Use this for initialization
     void Start () {
         
-        transform.position = new Vector3(Random.Range(-30, 30), -65+Random.Range(0,8), Random.Range(-30, 30));
+        transform.position = transform.position +  new Vector3(Random.Range(-30, 30), Random.Range(0,8), Random.Range(-30, 30));
         y = gameObject.transform.position.y;
         gameObject.transform.position += new Vector3(0, Random.Range(-0.25f, 0.25f), 0);
     }

@@ -14,7 +14,7 @@ public class box : MonoBehaviour {
     {
         rb = GetComponent<Rigidbody>();
         rb.AddForce(transform.forward * speed);
-        transform.position = new Vector3(Random.Range(-30, 30), 0, Random.Range(-30, 30));
+        transform.position = transform.position + new Vector3(Random.Range(-30, 30), 0, Random.Range(-30, 30));
     }
 
     void FixedUpdate()

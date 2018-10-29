@@ -30,10 +30,13 @@ public class ParticleFX : MonoBehaviour {
         {
             speed = speed * -turnSpeed;
         }
-
-        if(gameObject.GetComponentInParent<MaterialChanger>().currentMat == 0)
+        if(transform.parent != null && transform.parent.parent != null)
         {
-            Destroy(gameObject);
+            if (gameObject.GetComponentInParent<MaterialChanger>().currentMat == 0)
+            {
+                Destroy(gameObject);
+            }
         }
+        
     }
 }
