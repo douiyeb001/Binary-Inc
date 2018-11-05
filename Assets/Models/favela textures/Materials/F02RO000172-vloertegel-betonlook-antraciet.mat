@@ -71,7 +71,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SliceGuide:
-        m_Texture: {fileID: 2800000, guid: 71a57b26185fea843b04097953d9bc84, type: 3}
+        m_Texture: {fileID: 2800000, guid: 673c06f6a64810f4ebe8535f75f4db56, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -94,7 +94,7 @@ Material:
     - _NoiseSize: 14.35
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _SliceAmount: 1
+    - _SliceAmount: 0.906
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
