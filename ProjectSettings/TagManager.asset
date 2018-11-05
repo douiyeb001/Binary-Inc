@@ -13,6 +13,8 @@ TagManager:
   - Box
   - Shootable
   - Waypoint
+  - Car
+  - Exit
   layers:
   - Default
   - TransparentFX

@@ -132,7 +132,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c276e5a14dc9cc54ebdda33b64fe83fe, type: 2}
   - {fileID: 2100000, guid: 6b65336684a3e384ab0fff8f937fb6cb, type: 2}
   - {fileID: 2100000, guid: bacc667b74c6bd0408f445e20ae4d69c, type: 2}
-  - {fileID: 2100000, guid: fa89f2b5182d4cd4db1d1bbeff46c4bb, type: 2}
+  - {fileID: 2100000, guid: c42978e734fcebc4fb7425edb7e2fbfa, type: 2}
   - {fileID: 2100000, guid: 176d6893d9116f347bab68028af12353, type: 2}
   obj:
   - {fileID: 1930144339396616, guid: a138b56ab37ac9647873b11bc231bd6c, type: 2}
@@ -141,6 +141,7 @@ MonoBehaviour:
   - {fileID: 1470466756580226, guid: 01362a37bfb92364891672e2fc59d151, type: 2}
   - {fileID: 1550753913456928, guid: b47ee0f55a3d4494784b2302b477f3f4, type: 2}
   - {fileID: 1047982780049968, guid: 3887d8c32997de94ba47f673be555445, type: 2}
+  currentMat: 0
 --- !u!136 &136157320754040612
 CapsuleCollider:
   m_ObjectHideFlags: 1

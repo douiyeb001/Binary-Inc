@@ -42,7 +42,7 @@ namespace VRStandardAssets.Examples
         {
             float timer = 10f;   // 3 seconds you can change this 
                                  //to whatever you want
-            normalizedTime = 0;
+            normalizedTime =   0;
             while (normalizedTime <= 1f)
             {
 

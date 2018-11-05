@@ -7,9 +7,12 @@ public class MovieHandler : MonoBehaviour {
 
     VideoPlayer movie;
     public long frames;
+    GameObject player;
+    bool active = true;
 	// Use this for initialization
 	void Start () {
         movie = GetComponent<VideoPlayer>();
+        player = GameObject.Find("Player");
 
         movie.Play();
 	}
@@ -17,7 +20,14 @@ public class MovieHandler : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         frames = movie.frame;
-        if (movie.frame == (long)movie.frameCount)
-            movie.Play();
-	}
+        if (movie.frame == (long)movie.frameCount&& active)
+        {
+            Debug.Log("turnurnrnu");
+            player.GetComponent<MovementVR>().TurnOnWalk();
+            //movie.Play();
+
+
+        }
+
+    }
 }

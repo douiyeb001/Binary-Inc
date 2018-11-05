@@ -7,11 +7,19 @@ public class box : MonoBehaviour {
     public float speed;
 
     private Rigidbody rb;
+    Renderer rend;
 
-    public int liveSpan = 500;
+    public float normalizedTime = 0;
+    float negativeNormalizedTime = .9f;
+    public int liveSpan = 800;
+    float timer = 10f;
+
 
     void Start()
     {
+        rend = GetComponent<Renderer>();
+        rend.material.shader = Shader.Find("Custom/DissolveInOut");
+
         rb = GetComponent<Rigidbody>();
         rb.AddForce(transform.forward * speed);
         transform.position = transform.position + new Vector3(Random.Range(-30, 30), 0, Random.Range(-30, 30));
@@ -19,6 +27,10 @@ public class box : MonoBehaviour {
 
     void FixedUpdate()
     {
+        normalizedTime += Time.deltaTime / timer;
+        negativeNormalizedTime -= (Time.deltaTime / timer) + 0.002f;
+        rend.material.SetFloat("_SliceAmount", negativeNormalizedTime);
+       
         //float moveHorizontal = Input.GetAxis("Horizontal");
         //float moveVertical = Input.GetAxis("Vertical");
 

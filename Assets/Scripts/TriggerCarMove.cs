@@ -6,14 +6,17 @@ public class TriggerCarMove: MonoBehaviour {
 
     private EnableLights[] lights;
     public float speed;
+    public float speedZ;
+    GameObject player;
 
 	// Use this for initialization
 	void Start () {
         lights = GetComponentsInChildren<EnableLights>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
+        player = GameObject.Find("Player");
+    }
+
+    // Update is called once per frame
+    void Update () {
 
         if (this.gameObject.activeSelf == true)
         {
@@ -23,7 +26,16 @@ public class TriggerCarMove: MonoBehaviour {
             }
             
         }
-         this.transform.position += new Vector3(speed, 0, 0);
+         this.transform.position += new Vector3(speed, 0, speedZ);
        
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Exit")
+        {
+            player.GetComponent<MovementVR>().TurnOnWalk();
+
+        }
+    }
+    
 }
