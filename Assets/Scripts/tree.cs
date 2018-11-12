@@ -10,7 +10,10 @@ public class tree : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-        Instantiate(obj, gameObject.transform);
+	void FixedUpdate () {
+        
+            Instantiate(obj, transform);
+        
+        
 	}
 }

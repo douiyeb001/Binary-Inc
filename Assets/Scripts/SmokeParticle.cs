@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class treeParticle : MonoBehaviour {
+public class SmokeParticle : MonoBehaviour {
 
     public float speed;
 
