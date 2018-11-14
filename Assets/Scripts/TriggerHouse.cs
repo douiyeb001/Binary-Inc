@@ -22,14 +22,15 @@ public class TriggerHouse : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Car")
+        if (other.gameObject.tag == "Car" || other.gameObject.tag == "Player")
         {
             StartCoroutine(Countdown());
-            Debug.Log("PIZZA");
+            Debug.Log("Inside the OntriggerIf");
         }
     }
     private IEnumerator Countdown()
     {
+        
         float timer = 10f;   // 3 seconds you can change this 
                              //to whatever you want
         normalizedTime = 0;

@@ -72,7 +72,7 @@ namespace VRStandardAssets.Examples
 
             yield return new WaitForSecondsRealtime(delayTimer);
             Destroy(this.gameObject);
-            player.GetComponent<MovementVR>().TurnOnWalk();
+            player.GetComponent<UpdatedMovement>().TurnOnWalk();
             
             
             yield return null;
