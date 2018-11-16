@@ -22,7 +22,7 @@ public class TriggerHouse : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Car" || other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Car")
         {
             StartCoroutine(Countdown());
             Debug.Log("Inside the OntriggerIf");

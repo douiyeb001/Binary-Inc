@@ -43,11 +43,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FlickerTex:
-        m_Texture: {fileID: 2800000, guid: bcbbcb8f5dfd06d4392aa6d250f5bc15, type: 3}
+        m_Texture: {fileID: 2800000, guid: d89076aa88697fd4b96c61c6c32b863c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 3fcd61b1a1ac43a489cd951e0fb1018a, type: 3}
+        m_Texture: {fileID: 2800000, guid: d89076aa88697fd4b96c61c6c32b863c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -89,7 +89,7 @@ Material:
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _RimPower: 3.08
+    - _RimPower: 5
     - _ScanSpeed: 0.36
     - _ScanTiling: 0.05
     - _SmoothnessTextureChannel: 0

@@ -19,7 +19,7 @@ public class MaterialChanger : MonoBehaviour {
 
     private void OnTriggerEnter(Collider col)
     {
-        if(col.gameObject.tag == "Box")
+        if(col.gameObject.tag == "Balloon")
         {
             t = Random.Range(1, material.Length);
             rend.sharedMaterial = material[t];

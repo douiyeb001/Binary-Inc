@@ -23,7 +23,7 @@ public class MovieHandler : MonoBehaviour {
         if (movie.frame == (long)movie.frameCount&& active)
         {
             Debug.Log("turnurnrnu");
-            player.GetComponent<MovementVR>().TurnOnWalk();
+            //player.GetComponent<MovementVR>().TurnOnWalk();
             //movie.Play();
 
 

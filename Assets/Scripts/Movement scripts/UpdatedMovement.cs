@@ -9,6 +9,7 @@ namespace VRStandardAssets.Utils
     {
 
         public Transform[] points;
+        public GameObject[] Queues;
         private int destPoint = 0;
         private NavMeshAgent agent;
         bool allowedToWalk = false;
@@ -25,7 +26,6 @@ namespace VRStandardAssets.Utils
             //agent.autoBraking = false;
 
 
-           //    GotoNextPoint();
         }
 
 
@@ -33,12 +33,13 @@ namespace VRStandardAssets.Utils
         {
             agent.isStopped = false;
             this.gameObject.GetComponentInChildren<VREyeRaycaster>().enabled = false;
-            this.gameObject.GetComponent<CapsuleCollider>().enabled = true;
        
 
             if (Vector3.Distance(points[destPoint].transform.position, this.gameObject.transform.position) < 0.5f)
             {
                 agent.isStopped = true;
+              
+
 
             }
             //agent.isStopped = false;
@@ -48,36 +49,51 @@ namespace VRStandardAssets.Utils
 
             // Set the agent to go to the currently selected destination.
             agent.destination = points[destPoint].position;
-
+            if (destPoint < points.Length-1)
+            {
+                destPoint++;
+                Debug.Log(destPoint);
+                //Queues[destPoint - 2].SetActive(false);
+            }
+            
 
         }
 
 
         void Update()
         {
+           
             if (!agent.pathPending && agent.remainingDistance < 0.5f && agent.isStopped == false && !allowedToWalk )
             {
-                agent.isStopped = true;
                 this.gameObject.GetComponentInChildren<VREyeRaycaster>().enabled = true;
-                this.gameObject.GetComponent<CapsuleCollider>().enabled = false;
-                allowedToWalk = false;
-               
 
+                Debug.Log("Turn script on");
+                agent.isStopped = true;
+                allowedToWalk = false;
+                SetActiveAllChildren(points[destPoint], true);
 
             }
 
-            // Choose the next destination point when the agent gets
-            // close to the current one.
-            if (agent.isStopped == true && allowedToWalk)
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                destPoint++;
-                Debug.Log(destPoint);
                 GotoNextPoint();
             }
+            // Choose the next destination point when the agent gets
+            // close to the current one.
+
         }
         public void TurnOnWalk()
         {
-            allowedToWalk = true;   
+            GotoNextPoint();
+        }
+
+        private void SetActiveAllChildren(Transform points, bool value)
+        {
+            foreach (Transform child in points)
+            {
+                child.gameObject.SetActive(value);
+                SetActiveAllChildren(child, value);
+            }
         }
     }
 }
