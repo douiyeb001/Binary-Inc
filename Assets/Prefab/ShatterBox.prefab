@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 65538683692248360}
   - component: {fileID: 54014526905865496}
   - component: {fileID: 114562702133485182}
+  - component: {fileID: 114695133809899512}
   m_Layer: 0
   m_Name: ShatterBox
   m_TagString: Untagged
@@ -124,6 +125,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 366718298a44e4943b02e697f6ab4c3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
+  speed: 0
+  x: 20
+  y: 20
+  z: 20
   liveSpan: 800
   sliceAmount: 0.2
+--- !u!114 &114695133809899512
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1022189549510238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99edac93a4fbade4d8f3637d4e5fd9f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveTo: {fileID: 1429867936756082, guid: 633a5100fb7e6bd46a29eb778f5950b1, type: 2}

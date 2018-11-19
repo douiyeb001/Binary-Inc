@@ -13,6 +13,7 @@ namespace VRStandardAssets.Utils
         GameObject player;
         bool active = true;
         public GameObject WalkingCharacter;
+        public bool boom= true;
 
         // Use this for initialization
         void Start()
@@ -29,10 +30,14 @@ namespace VRStandardAssets.Utils
             frames = movie.frame;
             if (movie.frame == (long)movie.frameCount && active)
             {
-                for (int i = 0; i < 300; i++)
+                if (boom)
                 {
-                    Instantiate(shatter, gameObject.transform.position, gameObject.transform.rotation);
+                    for (int i = 0; i < 400; i++)
+                    {
+                        Instantiate(shatter, gameObject.transform.position, gameObject.transform.rotation);
+                    }
                 }
+                
                 player.GetComponent<UpdatedMovement>().TurnOnWalk();
                 WalkingCharacter.SetActive(true);
                 Destroy(gameObject);

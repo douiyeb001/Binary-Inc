@@ -22,7 +22,7 @@ public class ShatterBox : MonoBehaviour {
 
         rb = GetComponent<Rigidbody>();
         
-        float speedX = Random.Range(-x, x);
+        float speedX = Random.Range(-x+50, x+50);
         float speedY = Random.Range(-y, y);
         float speedZ = Random.Range(-z, z);
         transform.position += new Vector3(speedX, speedY, speedZ);
@@ -38,10 +38,14 @@ public class ShatterBox : MonoBehaviour {
 
     void FixedUpdate()
     {
-        sliceAmount += .001f;
+        //sliceAmount += .001f;
         rend.material.SetFloat("_SliceAmount", sliceAmount);
 
         if (sliceAmount > .5)
+        {
+            Destroy(gameObject);
+        }
+        if (liveSpan < 0)
         {
             Destroy(gameObject);
         }

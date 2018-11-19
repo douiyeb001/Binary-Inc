@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Shatter : MonoBehaviour {
     public GameObject shatter;
+    public int Maxspawns;
     public int liveSpan = 500;
     // Use this for initialization
     void Start () {
@@ -15,7 +16,7 @@ public class Shatter : MonoBehaviour {
         liveSpan--;
         if (liveSpan < 0)
         {
-            for(int i = 0; i < 300; i++)
+            for(int i = 0; i < Maxspawns; i++)
             {
                 Instantiate(shatter, gameObject.transform.position, gameObject.transform.rotation);
             }

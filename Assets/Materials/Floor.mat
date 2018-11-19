@@ -70,7 +70,7 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 1
     - _GridSpacing: -0.75
-    - _GridStep: 0.45
+    - _GridStep: 3
     - _GridThickness: 0.11
     - _GridWidth: 1.29
     - _Metallic: 1
