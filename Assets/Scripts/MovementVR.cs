@@ -44,11 +44,16 @@ public class MovementVR : MonoBehaviour {
 
       void Update()
     {
+        Debug.Log(destPoint);
         remainDistance = agent.remainingDistance;
         // Choose the next destination point when the agent gets
         // close to the current one.
         // agent.isStopped = true;
 
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            TurnOnWalk();
+        }
         if (!agent.pathPending && agent.remainingDistance < 0.5f && agent.isStopped == false)
         {
             agent.isStopped = true;
