@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: GradientColor
-  m_Shader: {fileID: 4800000, guid: 4497f423090f6644d942bbc249a577eb, type: 3}
+  m_Name: Wireframe-TransparentCulled
+  m_Shader: {fileID: 4800000, guid: a64caad055200da45b6df1c7c80839ed, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -62,8 +62,8 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _MaxTriSize: 25
     - _Metallic: 0
-    - _Middle: 1
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
@@ -71,10 +71,11 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
+    - _WireSmoothness: 3
+    - _WireThickness: 600
     - _ZWrite: 1
     m_Colors:
+    - _BaseColor: {r: 1, g: 0, b: 0.32941177, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _ColorBot: {r: 0, g: 0.12270403, b: 1, a: 1}
-    - _ColorMid: {r: 0.87628376, g: 1, b: 0, a: 1}
-    - _ColorTop: {r: 1, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _WireColor: {r: 0, g: 1, b: 0.98823535, a: 1}
