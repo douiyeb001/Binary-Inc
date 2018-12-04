@@ -17,6 +17,7 @@ TagManager:
   - Exit
   - Balloon
   - DestroyCharacter
+  - tile
   layers:
   - Default
   - TransparentFX
