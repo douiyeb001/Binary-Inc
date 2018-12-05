@@ -118,9 +118,9 @@ MonoBehaviour:
   sliceAmount: 0.216
   alphaColorChange: 1
   sliceColorChange: 1
-  x: 45
-  y: 15
-  z: 45
+  x: 30
+  y: 10
+  z: 20
 --- !u!135 &135626692782632514
 SphereCollider:
   m_ObjectHideFlags: 1

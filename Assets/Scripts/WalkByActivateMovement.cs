@@ -5,7 +5,7 @@ namespace VRStandardAssets.Utils
 {
     public class WalkByActivateMovement : MonoBehaviour {
         GameObject player;
-        int walkByTimer = 200;
+        public int walkByTimer = 0;
         bool walkBy = true;
         // Use this for initialization
         void Start() {

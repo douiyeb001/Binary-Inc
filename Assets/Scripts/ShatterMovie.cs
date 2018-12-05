@@ -34,7 +34,7 @@ namespace VRStandardAssets.Utils
             {
                 if (boom)
                 {
-                    for (int i = 0; i < 400; i++)
+                    for (int i = 0; i < 200; i++)
                     {
                         Instantiate(shatter, gameObject.transform.position, gameObject.transform.rotation);
                     }

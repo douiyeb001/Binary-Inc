@@ -2608,7 +2608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc4eecdbbc1a264e9c8b72d9217684a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  liveSpan: 500
+  liveSpan: 400
 --- !u!114 &114569521311979046
 MonoBehaviour:
   m_ObjectHideFlags: 1
