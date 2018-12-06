@@ -8,7 +8,7 @@ public class SpawnMultipleLights : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        for(int i = 0; i < 300; i++)
+        for(int i = 0; i < 50; i++)
         {
             Instantiate(box[Random.Range(0, box.Length)], gameObject.transform);
         }

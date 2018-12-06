@@ -8,10 +8,13 @@ public class TriggerCarMove: MonoBehaviour {
     private EnableLights[] lights;
     public float speed;
     public float speedZ;
+    GameObject player;
+    public int destroyTimer;
 
 	// Use this for initialization
 	void Start () {
         lights = GetComponentsInChildren<EnableLights>();
+        player = GameObject.Find("Player");
     }
 
     // Update is called once per frame
@@ -29,7 +32,17 @@ public class TriggerCarMove: MonoBehaviour {
          this.transform.position += new Vector3(speed, 0, speedZ);
        
     }
-   
+    private void FixedUpdate()
+    {
+        destroyTimer--;
+        if (destroyTimer<0)
+        {
+            
+            player.GetComponent<UpdatedMovement>().TurnOnWalk();
+            Destroy(gameObject);
+        }
+        
+    }
     //private void OnTriggerEnter(Collider other)
     //{
     //    if (other.gameObject.tag == "Exit")
@@ -39,5 +52,5 @@ public class TriggerCarMove: MonoBehaviour {
 
     //    }
     //}
-    
+
 }

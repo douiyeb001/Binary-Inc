@@ -12,7 +12,8 @@ namespace VRStandardAssets.Utils
         public long frames;
         GameObject player;
         bool active = true;
-        public GameObject WalkingCharacter;
+        int timer = 15;
+        //public GameObject WalkingCharacter;
         public bool boom= true;
 
         // Use this for initialization
@@ -27,19 +28,20 @@ namespace VRStandardAssets.Utils
         // Update is called once per frame
         void Update()
         {
+            timer--;
             frames = movie.frame;
-            if (movie.frame == (long)movie.frameCount && active)
+            if (movie.frame == (long)movie.frameCount && active&& timer<0)
             {
                 if (boom)
                 {
-                    for (int i = 0; i < 400; i++)
+                    for (int i = 0; i < 200; i++)
                     {
                         Instantiate(shatter, gameObject.transform.position, gameObject.transform.rotation);
                     }
                 }
                 
                 player.GetComponent<UpdatedMovement>().TurnOnWalk();
-                WalkingCharacter.SetActive(true);
+                //WalkingCharacter.SetActive(true);
                 Destroy(gameObject);
                 //Debug.Log("turnurnrnu");
                 //player.GetComponent<MovementVR>().TurnOnWalk();

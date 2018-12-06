@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 65084867209587436}
   - component: {fileID: 54138349085897484}
   - component: {fileID: 114077133454676744}
+  - component: {fileID: 114040539598749276}
   m_Layer: 0
   m_Name: ShatterBoxMovie
   m_TagString: Untagged
@@ -113,6 +114,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114040539598749276
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1370765716942158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fc4eecdbbc1a264e9c8b72d9217684a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  liveSpan: 1000
 --- !u!114 &114077133454676744
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -54,5 +54,6 @@ public class ParticleSystemRampGenerator : MonoBehaviour {
     {
         rampTexture = GenerateTextureFromGradient(procedrualGradientRamp);
         psr.material.SetTexture("_Ramp", rampTexture);
+        
     }
 }

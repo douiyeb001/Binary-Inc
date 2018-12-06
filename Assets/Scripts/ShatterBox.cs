@@ -10,6 +10,7 @@ public class ShatterBox : MonoBehaviour {
     Renderer rend;
     //public float minX,maxX,minY,maxY,minZ,MaxZ;
     public float x, y, z;
+    float rotX, rotY, rotZ;
     
     public int liveSpan = 800;
     public float sliceAmount = 0.3f;
@@ -21,7 +22,9 @@ public class ShatterBox : MonoBehaviour {
         rend.material.shader = Shader.Find("Custom/DissolveInOut");
 
         rb = GetComponent<Rigidbody>();
-        
+        rotX = Random.Range(-5f, 5f);
+        rotY = Random.Range(-5f, 5f);
+        rotZ = Random.Range(-5f, 5f);
         float speedX = Random.Range(-x+50, x+50);
         float speedY = Random.Range(-y, y);
         float speedZ = Random.Range(-z, z);
@@ -49,7 +52,9 @@ public class ShatterBox : MonoBehaviour {
         {
             Destroy(gameObject);
         }
-        
+        //transform.Rotate(x,y,z);
+        transform.Rotate(rotX, rotY, rotZ);
+
 
     }
 }

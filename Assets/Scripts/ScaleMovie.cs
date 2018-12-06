@@ -11,9 +11,9 @@ public class ScaleMovie : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-        if(transform.localScale.x< 0.82)
+        if(transform.localScale.x< 1.52)
         {
-            x += .0001f;
+            x += .00017f;
             y += .0001f;
             z += .0001f;
             transform.localScale += new Vector3(x, y, z);
