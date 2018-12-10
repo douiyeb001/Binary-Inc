@@ -19,6 +19,7 @@ public class CharacterSwitchHoloToParticle : MonoBehaviour {
         
         charParticle.SetActive(true);
         gameObject.SetActive(false);
+        collision.gameObject.SetActive(false);
         
     }
 }

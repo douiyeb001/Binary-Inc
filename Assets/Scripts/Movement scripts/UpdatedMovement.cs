@@ -13,6 +13,7 @@ namespace VRStandardAssets.Utils
         private int destPoint = 0;
         private NavMeshAgent agent;
         bool allowedToWalk = false;
+        public GameObject beforePortal;
 
 
         void Start()
@@ -53,6 +54,11 @@ namespace VRStandardAssets.Utils
             {
                 destPoint++;
                 Debug.Log(destPoint);
+                
+                /*if(destPoint == 6)
+                {
+                    beforePortal.SetActive(false);
+                }*/
                 //Queues[destPoint - 2].SetActive(false);
             }
             
@@ -93,6 +99,13 @@ namespace VRStandardAssets.Utils
             {
                 child.gameObject.SetActive(value);
                 SetActiveAllChildren(child, value);
+            }
+        }
+        public void cheapAss()
+        {
+            foreach (Transform child in points)
+            {
+                SetActiveAllChildren(child, true);
             }
         }
     }
