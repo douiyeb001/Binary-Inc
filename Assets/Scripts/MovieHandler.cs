@@ -12,7 +12,7 @@ public class MovieHandler : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         movie = GetComponent<VideoPlayer>();
-        player = GameObject.Find("Player");
+        //player = GameObject.Find("Player");
 
         movie.Play();
 	}
@@ -24,7 +24,7 @@ public class MovieHandler : MonoBehaviour {
         {
             Debug.Log("turnurnrnu");
             //player.GetComponent<MovementVR>().TurnOnWalk();
-            //movie.Play();
+            movie.Play();
 
 
         }
