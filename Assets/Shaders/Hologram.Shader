@@ -30,7 +30,7 @@
 	}
 	SubShader
 	{
-		Tags { "Queue"="Transparent" "RenderType"="Transparent" }
+		Tags { "Queue"="Opaque"}
 		Blend SrcAlpha OneMinusSrcAlpha
 		LOD 100
 		ColorMask RGB
