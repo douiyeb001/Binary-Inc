@@ -9,7 +9,7 @@ public class SpatialAudio : MonoBehaviour {
     public float volume;
     public float difference;
     float constant = 5;
-    float maxVolume,minVolume;
+    float maxVolume,minVolume,audioVolume;
     public float rot;
     float x, z;
     float cheapX, cheapZ;
@@ -21,6 +21,8 @@ public class SpatialAudio : MonoBehaviour {
 	void Start () {
 		
         maxVolume = .15f;
+        minVolume = .03f;
+        audioVolume=.15f;
         GetComponent<AudioSource>().spatialBlend = 0;
     }
 
@@ -37,29 +39,32 @@ public class SpatialAudio : MonoBehaviour {
         }
         else
         {
-            GetComponent<AudioSource>().volume = maxVolume;
+            GetComponent<AudioSource>().volume = audioVolume;
         }
 
         Vector3 viewPos = cam.WorldToViewportPoint(transform.position);
-        //if (viewPos.x > 0 && viewPos.x <= 1 && viewPos.y > 0 && viewPos.y < 1)
-        //{
-        //    inView = true;
-        //}else
-        //{
-        //    inView = false;
-        //}
-        if (viewPos.x>0 && viewPos.x < 1 && !inView)
+        if (viewPos.x>0 && viewPos.x < 1)
         {
-            maxVolume = .15f;
+            inView = true;
             float convertViewPos = (viewPos.x *2)-1;
             GetComponent<AudioSource>().panStereo = convertViewPos;
         }
         else
         {
             GetComponent<AudioSource>().panStereo = 0;
-            maxVolume = .03f;
+            inView = false;
         }
-        
+        if (inView && maxVolume >= GetComponent<AudioSource>().volume)
+        {
+            audioVolume += .002f;
+        }
+        if (!inView && minVolume <= GetComponent<AudioSource>().volume) 
+        {
+            audioVolume -= .002f;
+        }
+        GetComponent<AudioSource>().volume = audioVolume;
+
+
 
     }
 }
