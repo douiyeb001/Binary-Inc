@@ -25,7 +25,7 @@ public class ShatterBox : MonoBehaviour {
         rotX = Random.Range(-5f, 5f);
         rotY = Random.Range(-5f, 5f);
         rotZ = Random.Range(-5f, 5f);
-        float speedX = Random.Range(-x+50, x+50);
+        float speedX = Random.Range(0, x);
         float speedY = Random.Range(-y, y);
         float speedZ = Random.Range(-z, z);
         transform.position += new Vector3(speedX, speedY, speedZ);

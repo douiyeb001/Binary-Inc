@@ -1,0 +1,258 @@
+fileFormatVersion: 2
+guid: 3e61c5de162804c44af8953a9cebe998
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: birchMedium10Leaf
+    100002: birchMedium10Main
+    100004: birchMedium10MeshGroup
+    100006: birchMedium11Leaf
+    100008: birchMedium11Main
+    100010: birchMedium11MeshGroup
+    100012: birchMedium1Main
+    100014: birchMedium1MeshGroup
+    100016: birchMedium6Leaf
+    100018: birchMedium6Main
+    100020: birchMedium6Main 1
+    100022: birchMedium6MeshGroup
+    100024: birchMedium6MeshGroup1
+    100026: birchMedium8Leaf
+    100028: birchMedium8Main
+    100030: birchMedium8MeshGroup
+    100032: birchMedium9Leaf
+    100034: birchMedium9Main
+    100036: birchMedium9MeshGroup
+    100038: curveBirchMedium
+    100040: curveBirchMedium1
+    100042: curveBirchMedium2
+    100044: curveBirchMedium3
+    100046: locator1
+    100048: locator2
+    100050: MASH1_ReproMesh
+    100052: MASH2_ReproMesh
+    100054: MASH3_ReproMesh
+    100056: MASH4_ReproMesh
+    100058: MASH5_ReproMesh
+    100060: MASH6_ReproMesh
+    100062: pSphere1
+    100064: pSphere2
+    100066: pSphere3
+    100068: pSphere4
+    100070: pSphere5
+    100072: pSphere6
+    100074: strokeBirchMedium1
+    100076: strokeBirchMedium2
+    100078: strokeBirchMedium3
+    100080: strokeBirchMedium4
+    100082: strokeBirchMedium5
+    100084: strokeBirchMedium6
+    100086: tree01
+    100088: tree02
+    100090: //RootNode
+    400000: birchMedium10Leaf
+    400002: birchMedium10Main
+    400004: birchMedium10MeshGroup
+    400006: birchMedium11Leaf
+    400008: birchMedium11Main
+    400010: birchMedium11MeshGroup
+    400012: birchMedium1Main
+    400014: birchMedium1MeshGroup
+    400016: birchMedium6Leaf
+    400018: birchMedium6Main
+    400020: birchMedium6Main 1
+    400022: birchMedium6MeshGroup
+    400024: birchMedium6MeshGroup1
+    400026: birchMedium8Leaf
+    400028: birchMedium8Main
+    400030: birchMedium8MeshGroup
+    400032: birchMedium9Leaf
+    400034: birchMedium9Main
+    400036: birchMedium9MeshGroup
+    400038: curveBirchMedium
+    400040: curveBirchMedium1
+    400042: curveBirchMedium2
+    400044: curveBirchMedium3
+    400046: locator1
+    400048: locator2
+    400050: MASH1_ReproMesh
+    400052: MASH2_ReproMesh
+    400054: MASH3_ReproMesh
+    400056: MASH4_ReproMesh
+    400058: MASH5_ReproMesh
+    400060: MASH6_ReproMesh
+    400062: pSphere1
+    400064: pSphere2
+    400066: pSphere3
+    400068: pSphere4
+    400070: pSphere5
+    400072: pSphere6
+    400074: strokeBirchMedium1
+    400076: strokeBirchMedium2
+    400078: strokeBirchMedium3
+    400080: strokeBirchMedium4
+    400082: strokeBirchMedium5
+    400084: strokeBirchMedium6
+    400086: tree01
+    400088: tree02
+    400090: //RootNode
+    2100000: Default_Material
+    2100002: lambert1
+    2100004: blinn1
+    2100006: Z_Transparent
+    2100008: Z_Neon
+    2300000: birchMedium10Leaf
+    2300002: birchMedium10Main
+    2300004: birchMedium11Leaf
+    2300006: birchMedium11Main
+    2300008: birchMedium1Main
+    2300010: birchMedium6Leaf
+    2300012: birchMedium6Main
+    2300014: birchMedium6Main 1
+    2300016: birchMedium8Leaf
+    2300018: birchMedium8Main
+    2300020: birchMedium9Leaf
+    2300022: birchMedium9Main
+    2300024: MASH1_ReproMesh
+    2300026: MASH2_ReproMesh
+    2300028: MASH3_ReproMesh
+    2300030: MASH4_ReproMesh
+    2300032: MASH5_ReproMesh
+    2300034: MASH6_ReproMesh
+    2300036: pSphere1
+    2300038: pSphere2
+    2300040: pSphere3
+    2300042: pSphere4
+    2300044: pSphere5
+    2300046: pSphere6
+    3300000: birchMedium10Leaf
+    3300002: birchMedium10Main
+    3300004: birchMedium11Leaf
+    3300006: birchMedium11Main
+    3300008: birchMedium1Main
+    3300010: birchMedium6Leaf
+    3300012: birchMedium6Main
+    3300014: birchMedium6Main 1
+    3300016: birchMedium8Leaf
+    3300018: birchMedium8Main
+    3300020: birchMedium9Leaf
+    3300022: birchMedium9Main
+    3300024: MASH1_ReproMesh
+    3300026: MASH2_ReproMesh
+    3300028: MASH3_ReproMesh
+    3300030: MASH4_ReproMesh
+    3300032: MASH5_ReproMesh
+    3300034: MASH6_ReproMesh
+    3300036: pSphere1
+    3300038: pSphere2
+    3300040: pSphere3
+    3300042: pSphere4
+    3300044: pSphere5
+    3300046: pSphere6
+    4300000: birchMedium1Main
+    4300002: pSphere1
+    4300004: MASH1_ReproMesh
+    4300006: birchMedium6Main
+    4300008: birchMedium6Leaf
+    4300010: birchMedium6Main
+    4300012: pSphere2
+    4300014: MASH2_ReproMesh
+    4300016: birchMedium8Main
+    4300018: birchMedium8Leaf
+    4300020: pSphere3
+    4300022: MASH3_ReproMesh
+    4300024: birchMedium9Main
+    4300026: birchMedium9Leaf
+    4300028: pSphere4
+    4300030: birchMedium10Main
+    4300032: birchMedium10Leaf
+    4300034: pSphere5
+    4300036: birchMedium11Main
+    4300038: birchMedium11Leaf
+    4300040: pSphere6
+    4300042: MASH4_ReproMesh
+    4300044: MASH5_ReproMesh
+    4300046: MASH6_ReproMesh
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

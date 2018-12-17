@@ -19,7 +19,7 @@ public class Tiles : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("tile"))
         {
-            Debug.Log("colide");
+            Debug.Log("collide");
             transform.position = tf.position + new Vector3(Random.Range(minX, x), y, Random.Range(minZ, z));
         }
     }
