@@ -40,7 +40,7 @@ namespace VRStandardAssets.Utils
                     }
                 }
                 
-                //player.GetComponent<UpdatedMovement>().TurnOnWalk();
+                player.GetComponent<UpdatedMovement>().TurnOnWalk();
                 //WalkingCharacter.SetActive(true);
                 Destroy(gameObject);
                 //Debug.Log("turnurnrnu");
