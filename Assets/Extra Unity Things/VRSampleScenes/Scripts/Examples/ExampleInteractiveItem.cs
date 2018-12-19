@@ -52,7 +52,7 @@ namespace VRStandardAssets.Examples
                 foreach (Renderer mat in materials)
                 {
                     mat.material.SetFloat("_SliceAmount", negativeNormalizedTime);
-                    sliceAmount= mat.material.GetFloat("_SliceAmount");
+                    sliceAmount = mat.material.GetFloat("_SliceAmount");
                 }
 
                 if (sliceAmount <= 0)
