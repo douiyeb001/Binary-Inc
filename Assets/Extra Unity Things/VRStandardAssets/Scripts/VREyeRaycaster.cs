@@ -69,6 +69,14 @@ namespace VRStandardAssets.Utils
             Ray ray = new Ray(m_Camera.position, m_Camera.forward);
             RaycastHit hit;
             
+            if(Physics.Raycast(ray, out hit ))
+            {
+            if(hit.collider.name == "StartRings")
+                {
+                    Debug.Log("startrings hit");
+                    GameObject.Find("StartRings").GetComponent<StartRings>().active = true;
+                }
+            }
             // Do the raycast forweards to see if we hit an interactive item
             if (Physics.Raycast(ray, out hit, m_RayLength, ~m_ExclusionLayers))
             {

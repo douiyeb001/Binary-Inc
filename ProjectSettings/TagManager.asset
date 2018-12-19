@@ -18,6 +18,7 @@ TagManager:
   - Balloon
   - DestroyCharacter
   - tile
+  - Rings
   layers:
   - Default
   - TransparentFX

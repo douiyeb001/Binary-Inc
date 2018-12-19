@@ -6,7 +6,7 @@ public class TriggerDome : MonoBehaviour {
 
     public float myDome = 0;
     Renderer mat;
-    bool on;
+    public bool on;
      void Start()
     {
         mat = GetComponentInChildren<Renderer>();

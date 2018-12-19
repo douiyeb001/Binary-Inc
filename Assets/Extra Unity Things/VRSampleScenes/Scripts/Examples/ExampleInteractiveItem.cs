@@ -106,10 +106,14 @@ namespace VRStandardAssets.Examples
            // StartCoroutine(Countdown());
             Debug.Log("Show over state");
             StartCoroutine(NewCountDown());
+            
+            
+
+
 
             // m_Renderer.material = m_OverMaterial;
             Debug.Log("hit");
-
+            
         }
 
 

@@ -13,7 +13,7 @@ namespace VRStandardAssets.Utils
         private int destPoint = 0;
         private NavMeshAgent agent;
         bool allowedToWalk = false;
-        public GameObject beforePortal;
+        //public GameObject beforePortal;
 
 
         void Start()
