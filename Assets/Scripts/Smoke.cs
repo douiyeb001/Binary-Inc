@@ -6,7 +6,7 @@ public class Smoke : MonoBehaviour {
 
     public GameObject obj;
     int spawnTimer;
-    int constant = 5;
+    public int constant = 5;
     // Use this for initialization
     void Start()
     {
