@@ -4,11 +4,8 @@ using UnityEngine;
 
 public class SpatialAudio : MonoBehaviour {
 
-    public Transform player;
     public Camera cam;
     public float volume;
-    float sum;
-    public float difference;
     float constant = 5;
     float maxVolume,minVolume,audioVolume;
     bool inView = false;
@@ -18,38 +15,26 @@ public class SpatialAudio : MonoBehaviour {
         maxVolume = .15f;
         minVolume = .03f;
         audioVolume=.15f;
-        GetComponent<AudioSource>().spatialBlend = 0;
+        GetComponent<AudioSource>().spatialBlend = 1;
     }
 
     // Update is called once per frame
     void Update () {
-        
-        difference = Vector3.Distance(transform.position, player.position);
-        
-        if (difference<0)
-            difference = difference*-1;
-        sum = constant / difference;
-        if (maxVolume> sum)
-        {
-            GetComponent<AudioSource>().volume = sum;
-        }
-        else
-        {
-            GetComponent<AudioSource>().volume = audioVolume;
-        }
-
-        Vector3 viewPos = cam.WorldToViewportPoint(transform.position);
-        if (viewPos.x>0 && viewPos.x < 1)
+        /*Vector3 viewPos = cam.WorldToViewportPoint(transform.position);
+        if(viewPos.x>0 && viewPos.x < 1)
         {
             inView = true;
-            float convertViewPos = (viewPos.x *2)-1;
+            float convertViewPos = (viewPos.x * 2) - 1;
             GetComponent<AudioSource>().panStereo = convertViewPos;
         }
         else
         {
             GetComponent<AudioSource>().panStereo = 0;
             inView = false;
-        }
+        }*/
+
+
+
         if (inView && maxVolume >= GetComponent<AudioSource>().volume)
         {
             audioVolume += .002f;
@@ -58,9 +43,7 @@ public class SpatialAudio : MonoBehaviour {
         {
             audioVolume -= .002f;
         }
-        if(maxVolume>=sum && maxVolume >=audioVolume)
-            GetComponent<AudioSource>().volume = audioVolume;
-        
-
+        //if(maxVolume>=sum && maxVolume >=audioVolume)
+        //    GetComponent<AudioSource>().volume = audioVolume;
     }
 }

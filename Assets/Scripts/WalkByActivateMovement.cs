@@ -5,8 +5,10 @@ namespace VRStandardAssets.Utils
 {
     public class WalkByActivateMovement : MonoBehaviour {
         GameObject player;
+        public GameObject TurnOffAfterPoint;
         public int walkByTimer = 0;
-        bool walkBy = true;
+        public bool walkBy = true;
+        bool turnOff = true;
         // Use this for initialization
         void Start() {
             player = GameObject.Find("Player");
@@ -14,13 +16,20 @@ namespace VRStandardAssets.Utils
 
         // Update is called once per frame
         void Update() {
-            walkByTimer--;
-            if (walkByTimer<0&&walkBy)
+            if(walkBy)
+                walkByTimer--;
+
+            if (walkByTimer<0 && walkBy)
             {
                 player.GetComponent<UpdatedMovement>().TurnOnWalk();
                 walkBy = false;
             }
 
+            if(TurnOffAfterPoint != null && turnOff)
+            {
+                TurnOffAfterPoint.SetActive(false);
+                turnOff = false;
+            }
         }
     }
 }
