@@ -25,7 +25,7 @@ public class StartRings : MonoBehaviour {
                 liveSpan = liveSpanTime;
                 current++;
             }
-            else if (current == ring.Length - 1)
+            else if (current == ring.Length)
             {
                 sphere.GetComponent<TriggerDome>().on = true;
                 Destroy(gameObject);
