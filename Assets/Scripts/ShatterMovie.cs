@@ -7,6 +7,7 @@ namespace VRStandardAssets.Utils
 
     public class ShatterMovie : MonoBehaviour
     {
+        public GameObject turnOffObject;
         public GameObject shatter;
         VideoPlayer movie;
         public long frames;
@@ -38,6 +39,10 @@ namespace VRStandardAssets.Utils
                     {
                         Instantiate(shatter, gameObject.transform.position, gameObject.transform.rotation);
                     }
+                }
+                if(turnOffObject != null)
+                {
+                    turnOffObject.SetActive(false);
                 }
                 
                 player.GetComponent<UpdatedMovement>().TurnOnWalk();
