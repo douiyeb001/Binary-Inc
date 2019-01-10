@@ -23,13 +23,14 @@ namespace VRStandardAssets.Utils
             movie = GetComponent<VideoPlayer>();
             player = GameObject.Find("Player");
 
-            movie.Play();
+            //movie.Play();
         }
 
         // Update is called once per frame
         void Update()
         {
-            timer--;
+            if(movie.isPlaying)
+                timer--;
             frames = movie.frame;
             if (movie.frame == (long)movie.frameCount && active&& timer<0)
             {

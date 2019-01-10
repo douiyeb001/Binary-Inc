@@ -39,7 +39,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DissolveTex:
-        m_Texture: {fileID: 2800000, guid: 1e5200b3d02b49347adb9d20ccce71f8, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7d761734cc0124549a106533f775ce41, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
@@ -47,7 +47,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: eff882450553fc148a71afcbd38c7708, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7d761734cc0124549a106533f775ce41, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -107,4 +107,4 @@ Material:
     - _EdgeColour2: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Glow: {r: 0.5471698, g: 0.5471698, b: 0.5471698, a: 1}
-    - _GlowEnd: {r: 0.028301895, g: 0.028301895, b: 0.028301895, a: 1}
+    - _GlowEnd: {r: 0.122641504, g: 0.122641504, b: 0.122641504, a: 1}

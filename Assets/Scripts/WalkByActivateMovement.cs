@@ -6,9 +6,11 @@ namespace VRStandardAssets.Utils
     public class WalkByActivateMovement : MonoBehaviour {
         GameObject player;
         public GameObject TurnOffAfterPoint;
+        public GameObject TurnOnAfterPoint;
         public int walkByTimer = 0;
         public bool walkBy = true;
         bool turnOff = true;
+        bool turnOn = true;
         // Use this for initialization
         void Start() {
             player = GameObject.Find("Player");
@@ -29,6 +31,11 @@ namespace VRStandardAssets.Utils
             {
                 TurnOffAfterPoint.SetActive(false);
                 turnOff = false;
+            }
+            if (TurnOnAfterPoint != null && turnOn)
+            {
+                TurnOnAfterPoint.SetActive(false);
+                turnOn = false;
             }
         }
     }
