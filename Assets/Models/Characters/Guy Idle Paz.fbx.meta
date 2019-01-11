@@ -1,0 +1,136 @@
+fileFormatVersion: 2
+guid: a8ad0e964f52610448f4cde0cf748f1e
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Body
+    100002: default
+    100004: Eyelashes
+    100006: //RootNode
+    100008: Guy Idle Paz
+    400000: Body
+    400002: default
+    400004: Eyelashes
+    400006: //RootNode
+    400008: Guy Idle Paz
+    2100000: 40s_Cotton_Poplin_FCL1PSC009 Copy 1_FRONT_96022
+    2100002: 40s_Cotton_Poplin_FCL1PSC009_FRONT_4009
+    2100004: BTN_FABRIC_FRONT_4026
+    2100006: BTN_FABRIC_FRONT_4041
+    2100008: Raw_Denim_FCL1PSD001_FRONT_4015
+    2100010: BTN_FABRIC_FRONT_4056
+    2100012: PT_FABRIC_FRONT_4093
+    2100014: PT_FABRIC_FRONT_4113
+    2100016: PT_FABRIC_FRONT_4074
+    2100018: PT_FABRIC_FRONT_44067
+    2100020: PT_FABRIC_FRONT_44082
+    2100022: PT_FABRIC_FRONT_55011
+    2100024: PT_FABRIC_FRONT_55025
+    2100026: PT_FABRIC_FRONT_66377
+    2100028: PT_FABRIC_FRONT_77813
+    2100030: PT_FABRIC_FRONT_164296
+    2100032: Material4354
+    2100034: Material4250
+    2100036: Material4457
+    2100038: Material4559
+    2100040: Material4662
+    2100042: Material4683
+    2100044: Material165212
+    2100046: Material3699
+    2100048: Material3710
+    2100050: Material3718
+    2300000: Body
+    2300002: default
+    2300004: Eyelashes
+    2300006: Guy Idle Paz
+    3300000: Body
+    3300002: default
+    3300004: Eyelashes
+    3300006: Guy Idle Paz
+    4300000: Guy Idle Paz
+    4300002: default
+    4300004: Body
+    4300006: Eyelashes
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

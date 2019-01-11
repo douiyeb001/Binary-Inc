@@ -7,6 +7,7 @@ using VRStandardAssets.Utils;
 public class VideoController : MonoBehaviour {
     public GameObject[] video;
     bool next = false;
+    public long frames;
     int timer = 15;
     int currentVideo = 0;
     // Use this for initialization
@@ -18,8 +19,11 @@ public class VideoController : MonoBehaviour {
 	void Update () {
         timer--;
         VideoPlayer movie = video[currentVideo].GetComponent<VideoPlayer>();
+        
+        frames = video[currentVideo].GetComponent<VideoPlayer>().frame;
         if (movie.frame == (long)movie.frameCount&& timer<0)
         {
+            video[currentVideo].GetComponent<VideoPlayer>().frame = 0;
             currentVideo++;
             next = true;
         }
