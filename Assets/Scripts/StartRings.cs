@@ -5,6 +5,7 @@ using UnityEngine;
 public class StartRings : MonoBehaviour {
     public GameObject[] ring;
     public GameObject sphere;
+    public GameObject reveal;
     int liveSpan = 60;
     int liveSpanTime = 60;
     int current = 0;
@@ -27,6 +28,7 @@ public class StartRings : MonoBehaviour {
             }
             else if (current == ring.Length)
             {
+                reveal.GetComponent<RevealGlass>().enabled = true;
                 sphere.GetComponent<TriggerDome>().on = true;
                 Destroy(gameObject);
             }

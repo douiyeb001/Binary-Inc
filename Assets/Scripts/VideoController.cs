@@ -12,6 +12,7 @@ public class VideoController : MonoBehaviour {
     int currentVideo = 0;
     // Use this for initialization
     void Start () {
+        video[currentVideo].SetActive(true);
         video[currentVideo].GetComponent<VideoPlayer>().Play();
     }
 	
@@ -24,11 +25,15 @@ public class VideoController : MonoBehaviour {
         if (movie.frame == (long)movie.frameCount&& timer<0)
         {
             video[currentVideo].GetComponent<VideoPlayer>().frame = 0;
+            if (currentVideo < video.Length - 1)
+                video[currentVideo].SetActive(false);
             currentVideo++;
             next = true;
         }
         if (next)
         {
+            
+            video[currentVideo].SetActive(true);
             video[currentVideo].GetComponent<VideoPlayer>().Play();
             next = false;
         }
