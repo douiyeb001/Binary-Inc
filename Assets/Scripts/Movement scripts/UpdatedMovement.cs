@@ -12,15 +12,18 @@ namespace VRStandardAssets.Utils
         public GameObject[] Queues;
         private int destPoint = 0;
         private NavMeshAgent agent;
+       public  Material mat;
         bool allowedToWalk = false;
+        public float playerDistanceToPoint;
         //public GameObject beforePortal;
 
 
         void Start()
         {
+            mat.SetFloat("_Blend", 0);
+            playerDistanceToPoint = 0;
             this.gameObject.GetComponent<CapsuleCollider>().enabled = false;
             agent = GetComponent<NavMeshAgent>();
-
             // Disabling auto-braking allows for continuous movement
             // between points (ie, the agent doesn't slow down as it
             // approaches a destination point). 
@@ -34,12 +37,12 @@ namespace VRStandardAssets.Utils
         {
             agent.isStopped = false;
             this.gameObject.GetComponentInChildren<VREyeRaycaster>().enabled = false;
-       
+            
 
             if (Vector3.Distance(points[destPoint].transform.position, this.gameObject.transform.position) < 0.5f)
             {
                 agent.isStopped = true;
-              
+               
 
 
             }
@@ -68,7 +71,17 @@ namespace VRStandardAssets.Utils
 
         void Update()
         {
-           
+            
+            playerDistanceToPoint = Vector3.Distance(transform.position, points[9].position);
+                
+            if (destPoint > 10)
+            {
+                
+                mat.SetFloat("_Blend", (playerDistanceToPoint/1000));
+            }
+            
+
+
             if (!agent.pathPending && agent.remainingDistance < 0.5f && agent.isStopped == false && !allowedToWalk )
             {
                 this.gameObject.GetComponentInChildren<VREyeRaycaster>().enabled = true;

@@ -12,6 +12,10 @@ public class VideoController : MonoBehaviour {
     int currentVideo = 0;
     // Use this for initialization
     void Start () {
+        for (int i = 0; i < video.Length; i++)
+        {
+            video[i].SetActive(true);
+        }
         video[currentVideo].SetActive(true);
         video[currentVideo].GetComponent<VideoPlayer>().Play();
     }

@@ -6,6 +6,8 @@ public class StartRings : MonoBehaviour {
     public GameObject[] ring;
     public GameObject sphere;
     public GameObject reveal;
+    public GameObject LevelReset;
+    public GameObject P0;
     int liveSpan = 60;
     int liveSpanTime = 60;
     int current = 0;
@@ -30,6 +32,8 @@ public class StartRings : MonoBehaviour {
             {
                 reveal.GetComponent<RevealGlass>().enabled = true;
                 sphere.GetComponent<TriggerDome>().on = true;
+                P0.SetActive(true);
+                LevelReset.SetActive(true);
                 Destroy(gameObject);
             }
         }

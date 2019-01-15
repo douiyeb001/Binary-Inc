@@ -6,7 +6,7 @@ public class MoveHologram : MonoBehaviour {
     GameObject player;
     public Vector3 dott;
     Rigidbody rb;
-    float forceStrength = 1f;
+    float forceStrength = 2f;
     float speed = 5;
     Vector3 pos;
 	// Use this for initialization
