@@ -14,7 +14,7 @@ public class VideoController : MonoBehaviour {
     void Start () {
         for (int i = 0; i < video.Length; i++)
         {
-            video[i].SetActive(true);
+            video[i].SetActive(false);
         }
         video[currentVideo].SetActive(true);
         video[currentVideo].GetComponent<VideoPlayer>().Play();
@@ -23,23 +23,29 @@ public class VideoController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         timer--;
-        VideoPlayer movie = video[currentVideo].GetComponent<VideoPlayer>();
-        
-        frames = video[currentVideo].GetComponent<VideoPlayer>().frame;
-        if (movie.frame == (long)movie.frameCount&& timer<0)
+
+        if (currentVideo < video.Length)
         {
-            video[currentVideo].GetComponent<VideoPlayer>().frame = 0;
-            if (currentVideo < video.Length - 1)
-                video[currentVideo].SetActive(false);
-            currentVideo++;
-            next = true;
-        }
-        if (next)
-        {
-            
-            video[currentVideo].SetActive(true);
-            video[currentVideo].GetComponent<VideoPlayer>().Play();
-            next = false;
+
+
+            VideoPlayer movie = video[currentVideo].GetComponent<VideoPlayer>();
+
+            frames = video[currentVideo].GetComponent<VideoPlayer>().frame;
+            if (movie.frame == (long)movie.frameCount && timer < 0)
+            {
+                video[currentVideo].GetComponent<VideoPlayer>().frame = 0;
+                if (currentVideo < video.Length - 1)
+                    video[currentVideo].SetActive(false);
+                currentVideo++;
+                next = true;
+            }
+            if (next)
+            {
+
+                video[currentVideo].SetActive(true);
+                video[currentVideo].GetComponent<VideoPlayer>().Play();
+                next = false;
+            }
         }
 
     }

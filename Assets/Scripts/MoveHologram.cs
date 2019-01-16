@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class MoveHologram : MonoBehaviour {
     GameObject player;
-    public Vector3 dott;
+    public Vector3 dot;
     Rigidbody rb;
-    float forceStrength = 2f;
+    float forceStrength = 1f;
+    float distance = 13;
     float speed = 5;
     Vector3 pos;
 	// Use this for initialization
@@ -19,11 +20,11 @@ public class MoveHologram : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //rb.AddForce(-transform.forward * forceStrength);
-        float dis = Vector3.Distance(transform.position, player.transform.position);
-        dott = transform.position - player.transform.position;
-        if (dis < 13)
+        float distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
+        dot = transform.position - player.transform.position;
+        if (distanceToPlayer < distance)
         {
-            rb.AddForce(dott * forceStrength);
+            rb.AddForce(dot * forceStrength);
         }
         else
         {

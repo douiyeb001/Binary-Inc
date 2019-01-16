@@ -11,6 +11,7 @@ namespace VRStandardAssets.Utils
         public bool walkBy = true;
         bool turnOff = true;
         bool turnOn = true;
+        public bool removeThisObject = false;
         // Use this for initialization
         void Start() {
             player = GameObject.Find("Player");
@@ -25,6 +26,8 @@ namespace VRStandardAssets.Utils
             {
                 player.GetComponent<UpdatedMovement>().TurnOnWalk();
                 walkBy = false;
+                if (removeThisObject)
+                    Destroy(gameObject);
             }
 
             if(TurnOffAfterPoint != null && turnOff)

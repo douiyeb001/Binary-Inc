@@ -1,0 +1,183 @@
+fileFormatVersion: 2
+guid: 94b39f37f8c9568428490ce2df0e8cb8
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: bodyShape_skin_Shape
+    100002: ear_dummy_Shape
+    100004: eye_l_Shape
+    100006: eye_r_Shape
+    100008: eyelash_l_down_Shape
+    100010: eyelash_l_up_Shape
+    100012: eyelash_r_down_Shape
+    100014: eyelash_r_up_Shape
+    100016: //RootNode
+    100018: Guy stand point
+    100020: MV_Hair_Shape
+    100022: shoes_l_Shape
+    100024: shoes_r_Shape
+    400000: bodyShape_skin_Shape
+    400002: ear_dummy_Shape
+    400004: eye_l_Shape
+    400006: eye_r_Shape
+    400008: eyelash_l_down_Shape
+    400010: eyelash_l_up_Shape
+    400012: eyelash_r_down_Shape
+    400014: eyelash_r_up_Shape
+    400016: //RootNode
+    400018: Guy stand point
+    400020: MV_Hair_Shape
+    400022: shoes_l_Shape
+    400024: shoes_r_Shape
+    2100000: Pique_Jersey_FCL1PSK004_FRONT_4458
+    2100002: Terry_FCL1PSK005_FRONT_4437
+    2100004: FABRIC 4_FRONT_4452
+    2100006: Default Fabric_FRONT_4448
+    2100008: Material54191
+    2100010: Material54200
+    2100012: PT_FABRIC_FRONT_31309
+    2100014: PT_FABRIC_FRONT_31456
+    2100016: PT_FABRIC_FRONT_31575
+    2100018: PT_FABRIC_FRONT_31721
+    2100020: PT_FABRIC_FRONT_32928
+    2100022: PT_FABRIC_FRONT_33242
+    2100024: PT_FABRIC_FRONT_33556
+    2100026: PT_FABRIC_FRONT_49420
+    2100028: PT_FABRIC_FRONT_49726
+    2100030: PT_FABRIC_FRONT_64332
+    2100032: Material4591
+    2100034: Material3712
+    2100036: Material3717
+    2100038: Material3722
+    2100040: Material3727
+    2100042: Material3732
+    2100044: Material3739
+    2100046: Material3750
+    2100048: Material3755
+    2100050: Material3764
+    2100052: Material3768
+    2100054: Material3868
+    2100056: Material3873
+    2100058: Material3878
+    2100060: man_sports_shoes_shoesFBXASC045fx
+    2100062: dummy1FBXASC045fx
+    2100064: No Name
+    2300000: bodyShape_skin_Shape
+    2300002: ear_dummy_Shape
+    2300004: eye_l_Shape
+    2300006: eye_r_Shape
+    2300008: eyelash_l_down_Shape
+    2300010: eyelash_l_up_Shape
+    2300012: eyelash_r_down_Shape
+    2300014: eyelash_r_up_Shape
+    2300016: Guy stand point
+    2300018: MV_Hair_Shape
+    2300020: shoes_l_Shape
+    2300022: shoes_r_Shape
+    3300000: bodyShape_skin_Shape
+    3300002: ear_dummy_Shape
+    3300004: eye_l_Shape
+    3300006: eye_r_Shape
+    3300008: eyelash_l_down_Shape
+    3300010: eyelash_l_up_Shape
+    3300012: eyelash_r_down_Shape
+    3300014: eyelash_r_up_Shape
+    3300016: Guy stand point
+    3300018: MV_Hair_Shape
+    3300020: shoes_l_Shape
+    3300022: shoes_r_Shape
+    4300000: Guy stand point
+    4300002: eyelash_r_up_Shape
+    4300004: eyelash_r_down_Shape
+    4300006: eyelash_l_down_Shape
+    4300008: eyelash_l_up_Shape
+    4300010: ear_dummy_Shape
+    4300012: MV_Hair_Shape
+    4300014: eye_l_Shape
+    4300016: eye_r_Shape
+    4300018: bodyShape_skin_Shape
+    4300020: shoes_r_Shape
+    4300022: shoes_l_Shape
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
