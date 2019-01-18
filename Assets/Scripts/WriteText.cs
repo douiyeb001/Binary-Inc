@@ -31,7 +31,7 @@ public class WriteText : MonoBehaviour {
 
         brush.transform.position = Vector3.Lerp(brush.transform.position, tf[currentPoint].position, speed * Time.deltaTime);
     }
-
+    
 
 
 

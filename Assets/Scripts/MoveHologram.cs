@@ -10,16 +10,18 @@ public class MoveHologram : MonoBehaviour {
     float distance = 13;
     float speed = 5;
     Vector3 pos;
+    float hologramRotation;
 	// Use this for initialization
 	void Start () {
         player = GameObject.Find("Player");
         rb = GetComponent<Rigidbody>();
         pos = transform.position;
-	}
+        hologramRotation = Random.Range(-1, 1);
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        //rb.AddForce(-transform.forward * forceStrength);
+        transform.Rotate(0,hologramRotation,0);
         float distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
         dot = transform.position - player.transform.position;
         if (distanceToPlayer < distance)

@@ -512,13 +512,13 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1235015753480678}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 30e94eca1f948fc408642ebc47351943, type: 2}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.0046164393}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -575,6 +575,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   Queues: []
+  mat: {fileID: 0}
+  playerDistanceToPoint: 0
 --- !u!114 &114335205602390772
 MonoBehaviour:
   m_ObjectHideFlags: 1
