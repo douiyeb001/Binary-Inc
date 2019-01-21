@@ -10,7 +10,7 @@ namespace VRStandardAssets.Utils
     public class VREyeRaycaster : MonoBehaviour
     {
         public event Action<RaycastHit> OnRaycasthit;                   // This event is called every frame that the user's gaze is over a collider.
-
+        public GameObject player;
 
         [SerializeField] private Transform m_Camera;
         [SerializeField] private LayerMask m_ExclusionLayers;           // Layers to exclude from the raycast.
@@ -93,8 +93,11 @@ namespace VRStandardAssets.Utils
                 m_LastInteractible = interactible;
 
                 // Something was hit, set at the hit position.
-                if (m_Reticle)
+                if (hit.collider.tag == "Queue" || hit.collider.tag == "Rings" || player.GetComponent<UpdatedMovement>().agent.isStopped == false)
+                {
+                    Debug.Log("The rings are ok");
                     m_Reticle.SetPosition(hit);
+                }
 
                 if (OnRaycasthit != null)
                     OnRaycasthit(hit);

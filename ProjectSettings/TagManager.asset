@@ -19,6 +19,7 @@ TagManager:
   - DestroyCharacter
   - tile
   - Rings
+  - Queue
   layers:
   - Default
   - TransparentFX

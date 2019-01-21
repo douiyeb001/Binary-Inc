@@ -11,7 +11,7 @@ namespace VRStandardAssets.Utils
         public Transform[] points;
         public GameObject[] Queues;
         private int destPoint = 0;
-        private NavMeshAgent agent;
+        public NavMeshAgent agent;
        public  Material mat;
         bool allowedToWalk = false;
         public float playerDistanceToPoint;
@@ -28,7 +28,7 @@ namespace VRStandardAssets.Utils
             // between points (ie, the agent doesn't slow down as it
             // approaches a destination point). 
             //agent.autoBraking = false;
-
+            Screen.fullScreen = true;
 
         }
 
