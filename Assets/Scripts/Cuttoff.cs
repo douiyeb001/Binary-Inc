@@ -5,8 +5,10 @@ using UnityEngine;
 public class Cuttoff : MonoBehaviour {
 
     Renderer renderer;
+    public GameObject credits;
     public float alpha =1;
     public float constant =0.00025f;
+    public bool  end = false;
 	// Use this for initialization
 	void Start () {
         renderer = GetComponent<Renderer>();
@@ -17,5 +19,11 @@ public class Cuttoff : MonoBehaviour {
 	void FixedUpdate () {
         alpha -= constant;
         renderer.material.SetFloat("_Cutoff", alpha);
+
+        if (end && alpha <0)
+        {
+            credits.SetActive(true);
+            gameObject.SetActive(false);
+        }
     }
 }

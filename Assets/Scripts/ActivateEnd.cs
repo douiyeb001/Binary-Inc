@@ -5,6 +5,7 @@ using UnityEngine;
 public class ActivateEnd : MonoBehaviour {
     public GameObject endSpray;
     bool played = false;
+    bool end = true;
 	// Use this for initialization
 	void Start () {
 		
@@ -14,7 +15,11 @@ public class ActivateEnd : MonoBehaviour {
 	void Update () {
         if(GetComponent<AudioSource>().isPlaying)
             played = true;
-        if (!GetComponent<AudioSource>().isPlaying && played)
-            endSpray.SetActive(true);  
+        if (!GetComponent<AudioSource>().isPlaying && played && end)
+        {
+            endSpray.SetActive(true);
+            end = false;
+        }
+              
 	}
 }
