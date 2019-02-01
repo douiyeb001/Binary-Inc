@@ -9,6 +9,7 @@ public class Cuttoff : MonoBehaviour {
     public float alpha =1;
     public float constant =0.00025f;
     public bool  end = false;
+    public GameObject[] turnoff;
 	// Use this for initialization
 	void Start () {
         renderer = GetComponent<Renderer>();
@@ -24,6 +25,10 @@ public class Cuttoff : MonoBehaviour {
         {
             credits.SetActive(true);
             gameObject.SetActive(false);
+            foreach (GameObject off in turnoff)
+            {
+                off.SetActive(false);
+            }
         }
     }
 }
